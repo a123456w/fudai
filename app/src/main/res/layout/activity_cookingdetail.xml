@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.canyinghao.canrefresh.CanRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/can_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp" />
+
+                <com.ruirong.chefang.widget.MarqueTextView
+                    android:id="@+id/tv_table_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="@dimen/detailCommonMargin"
+                    android:drawableLeft="@drawable/laba"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    tools:text="总统套房一律五折，先到先得总统套房一律五折，先到先得总统套房一律五折，先到先得" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/spacing_large">
+
+                    <TextView
+                        android:id="@+id/tv_browsernum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@drawable/ic_browse"
+                        android:drawablePadding="5dp"
+                        tools:text="1999人浏览" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_f6f6f6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/per_capita"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color3"
+                            android:textSize="14dp"
+                            tools:text="金华四季" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.ruirong.chefang.view.MyRatingBar
+                                android:id="@+id/rating_bar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="8dp"
+                                android:clickable="true"
+                                app:isIndicator="true"
+                                app:progressColor="@color/star_color"
+                                app:rating="0"
+                                app:space="5dp"
+                                app:starDrawable="@drawable/ic_star_border"
+                                app:starHeight="13dp"
+                                app:starWidth="13dp">
+
+                            </com.ruirong.chefang.view.MyRatingBar>
+
+                            <TextView
+                                android:id="@+id/tv_score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0分"
+                                android:textColor="@color/red" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/per_capita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/red"
+                        android:textSize="14dp"
+                        tools:text="人均 : ￥40" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_locationred" />
+
+                    <TextView
+                        android:id="@+id/address_details"
+                        android:layout_width="0dp"
+                        android:layout_height="46dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:lines="2"
+                        android:textColor="@color/textcolor6"
+                        android:textSize="14dp"
+                        tools:text="陕西安康" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/color_f6f6f6" />
+
+
+                    <ImageView
+                        android:id="@+id/call_phone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/image_phone" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/color_f6f6f6" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:drawableLeft="@drawable/image_taochan"
+                    android:drawablePadding="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="套餐选项"
+                    android:textColor="@color/textcolor3"
+                    android:textSize="@dimen/textSize15" />
+
+                <com.qlzx.mylibrary.widget.NoScrollListView
+                    android:id="@+id/rv_taochan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </com.qlzx.mylibrary.widget.NoScrollListView>
+
+                <RelativeLayout
+                    android:id="@+id/rl_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:drawableLeft="@drawable/image_danping"
+                        android:drawablePadding="@dimen/dp10"
+                        android:gravity="center"
+                        android:text="单品选项"
+                        android:textColor="@color/textcolor3"
+                        android:textSize="@dimen/textSize15" />
+
+                    <TextView
+                        android:id="@+id/tv_ordercooking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="15dp"
+                        android:drawablePadding="@dimen/dp10"
+                        android:drawableRight="@drawable/fanhui"
+                        android:gravity="center"
+                        android:text="点  餐"
+                        android:textColor="#0066cc"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_danping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <RelativeLayout
+                    android:id="@+id/rl_all_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/tv_businessarea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="32dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="全部"
+                        android:textColor="@color/textcolor9"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin"
+                        android:src="@drawable/fanhui" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#eeeeee" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/comment_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="@dimen/textmarginleft"
+                        android:gravity="center"
+                        android:textColor="@color/text_color3"
+                        android:textSize="@dimen/font_normal"
+                        tools:text="用户评价（0）" />
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/list_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.qlzx.mylibrary.widget.CircleBar
+                            android:id="@+id/cb_evaluate"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center">
+
+                        </com.qlzx.mylibrary.widget.CircleBar>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/gray" />
+
+
+                        <com.qlzx.mylibrary.widget.NoScrollListView
+                            android:id="@+id/nslv_shopmall_comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </com.qlzx.mylibrary.widget.NoScrollListView>
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="20dp"
+                            android:drawableTop="@drawable/image_empty"
+                            android:gravity="center_horizontal"
+                            android:text="没有相关评论" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <com.canyinghao.canrefresh.classic.ClassicRefreshView
+            android:id="@id/can_refresh_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.canyinghao.canrefresh.classic.ClassicRefreshView
+            android:id="@id/can_refresh_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.canyinghao.canrefresh.CanRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_storemoney"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#e75252"
+            android:gravity="center"
+            android:text="我要储值"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_paybill"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#dd0f1b"
+            android:gravity="center"
+            android:text="我要买单"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</FrameLayout>

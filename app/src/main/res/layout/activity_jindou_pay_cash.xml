@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/division_color"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_choseBank"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_bankcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14sp"
+            android:hint="点我选择更换银行卡"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/textSize14" />
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jiantou" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/tv_money"
+            style="@style/color3_size15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="提现金额"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_exchange_money_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_money"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                style="@style/color3_size18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="¥" />
+
+
+            <EditText
+                android:id="@+id/et_withdrawsum"
+                style="@style/color9_size16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:hint="请输入提现金额"
+                android:inputType="number"
+                android:textColorHint="#999999" />
+
+        </LinearLayout>
+
+        <include layout="@layout/list_item_division_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/ll_exchange_money_num"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_shop_business"
+                style="@style/color9_size15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10sp"
+                android:text="当前余额:  " />
+
+            <TextView
+                android:id="@+id/tv_myconvert"
+                style="@style/colore75252_size15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:text="0.00" />
+
+            <TextView
+                style="@style/color9_size15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:text="元" />
+
+        </LinearLayout>
+
+
+        <include layout="@layout/list_item_division_line"></include>
+
+        <LinearLayout
+            android:id="@+id/ll_tixian"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/ll_exchange_money_num"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_shop_businesse"
+                style="@style/color9_size15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10sp"
+                android:text="免手续费提现额度:  " />
+
+            <TextView
+                android:id="@+id/tv_myconverte"
+                style="@style/colore75252_size15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:text="0.00" />
+
+            <TextView
+                style="@style/color9_size15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:text="元" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_btn"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>
+
+
+

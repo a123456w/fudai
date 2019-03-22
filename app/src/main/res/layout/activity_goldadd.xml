@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/red">
+
+        <TextView
+            android:id="@+id/tv_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="昨日收获（金豆）"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cash"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            tools:text="1900" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3.5dp"
+                android:text="总收获"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_allprofit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/white"
+                tools:text="1000金豆" />
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3.5dp"
+                android:text="种植金豆"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_investgold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/white"
+                tools:text="10000金豆" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:default_to_loading_more_scrolling_duration="500"
+        app:load_more_complete_delay_duration="0"
+        app:load_more_final_drag_offset="@dimen/load_more_final_offset_google"
+        app:load_more_trigger_offset="@dimen/load_more_trigger_offset_google"
+        app:refresh_final_drag_offset="@dimen/refresh_final_offset_google"
+        app:refresh_trigger_offset="@dimen/refresh_trigger_offset_google"
+        app:swipe_style="above">
+
+        <include
+            android:id="@id/swipe_refresh_header"
+            layout="@layout/layout_google_hook_header" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="20dp"
+            android:drawableTop="@drawable/image_empty"
+            android:gravity="center_horizontal"
+            android:text="暂无详情" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="31dp"
+            android:layout_height="27dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/text_color6"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="万年房产"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/text_color6"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+</LinearLayout>

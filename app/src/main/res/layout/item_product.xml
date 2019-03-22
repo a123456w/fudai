@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="106dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/textmarginleft"
+            android:layout_marginTop="@dimen/textmarginleft"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="汉阴自强地产-金海岸"
+                android:textSize="@dimen/font_normal"
+                android:textColor="@color/text_color3"
+                android:layout_marginTop="26dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="安康市汉滨区"
+                    android:textColor="@color/text_color6"
+                    android:textSize="13sp"
+                    android:layout_marginTop="9dp"
+                   />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:text="汉阴自强地产金海岸商业，立足高远..."
+                android:textColor="@color/text_color9"
+                android:textSize="@dimen/font_small"
+                android:layout_marginTop="11dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

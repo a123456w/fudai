@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:src="@mipmap/error"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_width="@dimen/text_size_23"
+            android:layout_height="@dimen/text_size_23" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="购买须知"
+            android:textColor="#ff333333"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_item"
+        android:layout_below="@id/ll"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="garage">
+        <item>新车</item>
+        <item>二手车</item>
+        <item>新房</item>
+        <item>二手房</item>
+    </string-array>
+</resources>

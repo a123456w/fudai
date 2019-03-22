@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/division_color"
+    android:orientation="vertical"
+    tools:context="com.ruirong.chefang.personalcenter.GoldbeanBusinessDetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_deails"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/image_newhouse" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="驴优客"
+            android:textColor="#202020"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            tools:text="50.00" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DetailsTitleText"
+            android:text="状态 :" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            style="@style/DetailsContentText"
+            tools:text="交易成功" />
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DetailsTitleText"
+            android:text="类型 :" />
+
+        <TextView
+            android:id="@+id/tv_goldbean_type"
+            style="@style/DetailsContentText"
+            tools:text="90317420171127034148" />
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DetailsTitleText"
+            android:text="提现金额 :" />
+
+        <TextView
+            android:id="@+id/tv_goldbean_money"
+            style="@style/DetailsContentText"
+            tools:text="90317420171127034148" />
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DetailsTitleText"
+            android:text="提现手续费 :" />
+
+        <TextView
+            android:id="@+id/tv_goldbean_shouxumoney"
+            style="@style/DetailsContentText"
+            tools:text="90317420171127034148" />
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_shijimoney"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DetailsTitleText"
+            android:text="实际到账金额 :" />
+
+        <TextView
+            android:id="@+id/tv_goldbean_shijimoney"
+            style="@style/DetailsContentText"
+            tools:text="90317420171127034148" />
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DetailsTitleText"
+            android:text="订单编号 :" />
+
+        <TextView
+            android:id="@+id/tv_goldbean_number"
+            style="@style/DetailsContentText"
+            tools:text="90317420171127034148" />
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DetailsTitleText"
+            android:text="创建时间 :" />
+
+        <TextView
+            android:id="@+id/tv_goldbean_time"
+            style="@style/DetailsContentText"
+            tools:text="90317420171127034148" />
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="20dp"
+            android:drawableTop="@drawable/image_empty"
+            android:gravity="center_horizontal"
+            android:text="没有相关内容" />
+    </RelativeLayout>
+</LinearLayout>

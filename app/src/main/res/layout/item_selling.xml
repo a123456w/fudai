@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="107dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/textmarginleft"
+            android:layout_marginTop="19dp"
+            android:scaleType="centerCrop"
+          />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing_layout_padding"
+            android:layout_toLeftOf="@+id/rightarrows"
+            android:layout_toRightOf="@+id/iv_pic"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/font_normal"
+                tools:text="鼎极轩海鲜烤肉自助" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/rb_grade"
+                    style="@android:style/Widget.RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="3dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/ratingbar_drawable" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="@dimen/font_small"
+                    tools:text="￥" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/text_red"
+                android:textSize="14sp"
+                tools:text="鼎极轩海鲜烤肉自助，以时尚的装修风" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/rightarrows"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/right_arrows" />
+    </RelativeLayout>
+</LinearLayout>

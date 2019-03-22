@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tv_is_check"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_choosed" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/tv_content"
+            android:layout_width="106dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:src="@color/red" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/color3_size15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="百岁山天然矿泉水" />
+
+            <!--<TextView
+                style="@style/color6_size12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="周一至周日" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/color6_size12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="周一至周日" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    style="@style/color6_size12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="免预约" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/colore75252_size14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥18" />
+
+                <TextView
+                    style="@style/color6_size12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/tv_price"
+                    tools:text="门市价：28" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/iv_subtract"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:src="@drawable/reduce" />
+
+                    <TextView
+                        android:id="@+id/tv_count"
+                        android:layout_width="29dp"
+                        android:layout_height="19dp"
+                        android:background="@drawable/border_gray_2"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/text_color" />
+
+                    <ImageView
+                        android:id="@+id/iv_add"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:src="@drawable/add" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_below="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:background="#eeeeee"></View>
+
+
+</RelativeLayout>

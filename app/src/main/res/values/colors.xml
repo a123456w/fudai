@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#E75252</color>
+    <color name="stateColor">#dd0f1b</color>
+    <color name="province_line_border">#C7C7C7</color>
+
+    <color name="tabSelected">#F00</color>
+    <color name="tabNormal">#000</color>
+    <color name="bluedark">#0066cc</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="gray_bg">#f0eff5</color>
+    <color name="tabActiveColor">#DE443F</color>
+    <color name="tabInactiveColor">#898989</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#E85253</color>
+    <color name="wheelViewTextColor">#999999</color>
+    <color name="star_color">#fea743</color>
+    <color name="gray">#eeeeee</color>
+    <color name="bg_gray">#cccccc</color>
+    <color name="light_grey">#999999</color>
+    <color name="background_color">#eeeeee</color>
+    <color name="gold">#FEE260</color>
+    <color name="black">#FF000000</color>
+    <color name="blue">#3bc6f1</color>
+    <color name="light_blue">#87d0f2</color>
+    <color name="text_color">#333333</color>
+    <color name="hint_color">#898989</color>
+    <color name="title_bar_text_color">#fff</color>
+    <color name="cutting_line_color">#EEEEEE</color>
+    <color name="line_color">#EFEFEF</color>
+    <color name="light_yellow">#FBC02D</color>
+    <color name="yellow">#F9A825</color>
+    <color name="darkblue">#1A56AE</color>
+    <color name="green">#10AC6B</color>
+    <color name="layout_bg">#f4f4f4</color>
+    <color name="line1">#eeeeee</color>
+    <color name="text_color_spec">#ff333333</color>
+    <color name="text_color_spec1">#90C42F</color>
+
+
+    <color name="gray_text">#919191</color>
+    <color name="gray_btn">#EBEBEB</color>
+
+    <color name="color_red">#FD2E4A</color>
+    <color name="color_green">#13D1BE</color>
+    <color name="gray_line">#ebebeb</color>
+    <color name="black_text">#212121</color>
+    <color name="text_color3">#ff333333</color>
+    <color name="text_color6">#666666</color>
+    <color name="text_color9">#999999</color>
+    <color name="text_red">#dd0f1b</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="nwb_personal_setup_aboutapp_bg">#FFFFFF</color>
+    <color name="textcolor3">#333333</color>
+    <color name="textcolor6">#666666</color>
+    <color name="color_cccccc">#cccccc</color>
+
+    <color name="textcolor9">#999999</color>
+    <color name="nwb_bg_color_green">#009944</color>
+    <color name="nwb_bg_color_red">#fe3535</color>
+    <color name="nwb_bg_color_gray">#bbbbbb</color>
+    <color name="halving_line_color">#dddddd</color>
+    <color name="red_bg_d8271c">#d8271c</color>
+    <color name="division_color">#f6f6f6</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+
+    <color name="gray_light">#EBEDF0</color>
+
+    <color name="color_orange">#FF6600</color>
+    <color name="color_default">#666666</color>
+    <color name="color_gray">#999999</color>
+    <color name="text_trans3">#3d333333</color>
+    //明细确认订单dialog页面
+    <color name="order_commit_text1">#ff333333</color>
+    //明细确认订单dialog页面
+    <color name="order_commit_text2">#ff999999</color>
+    //自定义whellView
+    <color name="colorItem">#FF333333</color>
+    <color name="greens">#90C42F</color>
+    <color name="grey">#EEEEEE</color>
+    <color name="greys">#FFFFFF</color>
+    <color name="nwb_personal_setup_textcolor9">#999999</color>
+    <color name="nwb_personal_setup_textcolor10">#90C42F</color>
+    <color name="nearby_list_text_colors">#ffffff</color>
+</resources>

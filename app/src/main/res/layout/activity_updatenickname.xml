@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layouthight"
+      >
+        <com.ruirong.chefang.widget.LimitEditText
+            android:id="@+id/et_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layouthight"
+            android:background="@null"
+            android:hint="昵称控制在16个字符以内，仅包含英文与汉字"
+            android:textSize="16sp"
+            android:maxLength="16"
+            android:layout_centerVertical="true"
+             android:layout_marginLeft="@dimen/textmarginleft"
+            />
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/ic_delete_red"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/textmarginleft"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background="@color/gray"/>
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/layouthight"
+        android:text="请输入正确格式的昵称"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/textmarginleft"
+        android:textColor="@color/titleBarColor"
+        android:gravity="center_vertical"
+        />
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layouthight"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn"
+        android:text="保存"
+        android:textColor="@color/white" />
+
+</LinearLayout>

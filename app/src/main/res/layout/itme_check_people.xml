@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/check_people_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin"
+        android:gravity="center"
+        android:text="入住人1"
+        android:textColor="@color/text_color6"
+        android:textSize="@dimen/textSize16" />
+
+    <EditText
+        android:id="@+id/check_people_et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/check_people_pic"
+        android:layout_toRightOf="@+id/check_people_tv"
+        android:background="@null"
+        android:gravity="center_vertical|start"
+        android:hint="输入入住人姓名"
+        android:paddingLeft="10dp"
+        android:textColor="@color/text_color3"
+        android:textSize="@dimen/textSize15" />
+
+    <ImageView
+        android:id="@+id/check_people_pic"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin"
+        android:visibility="gone"
+        android:src="@drawable/image_tongxun" />
+</RelativeLayout>

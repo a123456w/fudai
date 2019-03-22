@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="22dp"
+            android:drawableLeft="@drawable/ic_chenghu"
+            android:drawablePadding="8dp"
+            android:text="称呼"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+
+            />
+
+        <EditText
+            android:id="@+id/et_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:hint="请输入您的姓名"
+            android:background="@null" />
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="22dp"
+            android:drawableLeft="@drawable/ic_calls"
+            android:drawablePadding="8dp"
+            android:text="电话"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:background="@null"
+            android:inputType="phone"
+            android:hint="请输入电话号码"
+            android:maxLength="11" />
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <LinearLayout
+        android:id="@+id/ll_time_choose"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="22dp"
+            android:drawableLeft="@drawable/ic_time"
+            android:drawablePadding="8dp"
+            android:text="预计到店时间"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sp_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="点我选择时间"
+            android:drawableRight="@drawable/fanhui"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/bluedark"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="22dp"
+            android:drawableLeft="@drawable/ic_renqun"
+            android:drawablePadding="8dp"
+            android:text="用餐人数"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ry_recommendpeoplenum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layouthight"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/selector_btn"
+        android:text="确认"
+        android:textColor="@color/white" />
+</LinearLayout>

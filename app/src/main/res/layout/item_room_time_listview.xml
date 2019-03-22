@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="107dp"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:scaleType="centerCrop"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="桔子水晶酒店"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/font_normal" />
+
+
+            <TextView
+                android:id="@+id/tv_sumtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="18小时"
+                android:textColor="#dd0f1b"
+                android:textSize="@dimen/textSize13" />
+
+
+            <TextView
+                android:id="@+id/tv_exchange"
+                style="@style/coloreffffff_size13"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/reserve_btn_bg"
+                android:gravity="center"
+                android:text="兑换" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!-- android:background="#eeeeee"-->
+    <!-- <com.ruirong.chefang.widget.HorizontalProgressBar
+         android:id="@+id/hpb"
+         android:layout_width="match_parent"
+         android:layout_height="9dp"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="75dp"
+       ></com.ruirong.chefang.widget.HorizontalProgressBar>-->
+
+    <ProgressBar
+
+        android:background="@drawable/bg_my_roomtime_progressbar"
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="75dp"
+        android:max="100"
+        android:progressDrawable="@drawable/webview_progress_bar_drawable" />
+
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp">
+
+            <ImageView
+                android:id="@+id/goods_pic"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:scaleType="centerCrop"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="120dp">
+
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:text="金华四季KTV（昌平店）" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_name"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    tools:text="任选6小时" />
+
+                <TextView
+                    android:id="@+id/tv_dicinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_name"
+                    android:layout_toRightOf="@+id/tv_user_name"
+                    android:textColor="@color/white"
+                    tools:text="精致小包间" />
+
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/moneysim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:text="￥"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@+id/moneysim"
+                android:textColor="@color/red"
+                android:textSize="28dp"
+                tools:text="18" />
+
+            <TextView
+                android:id="@+id/tvshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@id/tv_price"
+                android:text="门市价:" />
+
+            <TextView
+                android:id="@+id/moneys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@id/tvshop"
+                android:text="￥" />
+
+            <TextView
+                android:id="@+id/tv_shop_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@+id/moneys"
+                tools:text="28"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/enture_pay_money_bg"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="购买"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="套餐详情："
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/textSize15" />
+
+        <com.ruirong.chefang.view.CustomExpandableListView
+            android:id="@+id/can_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/line"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="购买须知："
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/textSize15" />
+
+        <TextView
+            android:id="@+id/et_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="消费总额："
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/textSize15" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/textSize15"
+                tools:text="¥298" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

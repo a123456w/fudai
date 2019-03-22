@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">驴优客</string>
+    <string name="tab_index">首页</string>
+    <string name="tab_entering">多商户入驻</string>
+    <string name="tab_startup">创业中心</string>
+    <string name="my_cashback">我的福袋</string>
+    <string name="my_purse">我的钱包</string>
+    <string name="my_order">消费记录</string>
+    <string name="showing_record">看房记录</string>
+    <string name="appointment_record">预约记录</string>
+    <string name="my_storge">我的收藏</string>
+    <string name="receiveraddress">收货地址</string>
+    <string name="recommendlist">推荐记录</string>
+    <string name="no_more">暂无更多</string>
+    <string name="login_please">请先登录</string>
+    <string name="net_error">网络请求失败</string>
+    <string name="company_name">陕西睿容市场营销服务有限公司</string>
+    <string name="goto_settlement">去结算（%1$d）</string>
+    <string name="account_rule">1234567890ABCDEFGHIGKLMNOPQRSTUVWXYZabcdefghjigklmnopqrstuvwxyz@.</string>
+    <string name="loding">加载中...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yinlian_hint">正在开发中...</string>
+    //银联支付待开发 提示信息
+</resources>

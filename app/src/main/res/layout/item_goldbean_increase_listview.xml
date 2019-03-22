@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/division_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/goldbeanincrease_list"
+        android:orientation="vertical">
+
+        <TextView
+
+            style="@style/color3_size15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="30天种植期"
+
+            />
+
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="开始时间："
+                android:textColor="@color/text_color6"
+                android:textSize="@dimen/textSize13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tv_start_time"
+                android:text="2017/12/08 13:36"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/textSize13" />
+
+
+            <TextView
+                android:id="@+id/tv_money_num"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="200.00"
+                android:textColor="#dd0f1b"
+                android:textSize="@dimen/textSize13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/tv_money_num"
+                android:text="投资金额："
+                android:textColor="@color/text_color6"
+                android:textSize="@dimen/textSize13" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_start_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="开始时间："
+                android:textColor="@color/text_color6"
+                android:textSize="@dimen/textSize13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tv_start_time1"
+                android:text="2017/12/08 13:36"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/textSize13" />
+
+
+            <TextView
+                android:id="@+id/tv_money_num1"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="200.00"
+                android:textColor="#dd0f1b"
+                android:textSize="@dimen/textSize13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/tv_money_num1"
+                android:text="投资金额："
+                android:textColor="@color/text_color6"
+                android:textSize="@dimen/textSize13" />
+
+        </RelativeLayout>
+
+
+        <TextView
+
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="查看收获记录"
+            android:background="@color/transparent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

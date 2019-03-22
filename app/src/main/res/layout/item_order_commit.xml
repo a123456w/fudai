@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="优惠"
+        android:textColor="@color/order_commit_text1"
+        android:textSize="13sp"
+        android:layout_marginTop="@dimen/text_size_19"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018-10-02  不含早"
+        android:textColor="@color/order_commit_text2"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp15"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥298"
+        android:textColor="@color/order_commit_text1"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp15"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2×￥149"
+        android:textColor="@color/order_commit_text2"
+        android:textSize="10sp"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mn_calendar_color_line"/>
+</RelativeLayout>

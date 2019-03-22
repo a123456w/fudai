@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#8fc42e" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8fc42e">
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/tv_price"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:padding="13dp"
+            android:src="@drawable/ic_back_white" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@id/tv_search"
+            android:layout_toRightOf="@+id/iv_back"
+
+            android:background="@drawable/home_search_activity_edittext_bg"
+            android:hint="请输入搜索关键词"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="33dp"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/textSize12" />
+
+
+        <ImageView
+            android:id="@+id/iv_left_arrows"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignLeft="@id/et_search"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:src="@drawable/ic_search" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="最近查找"
+            android:textColor="@color/textcolor3"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <com.ruirong.chefang.widget.FlowLayout
+        android:id="@+id/flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="18dp"></com.ruirong.chefang.widget.FlowLayout>
+
+
+</LinearLayout>

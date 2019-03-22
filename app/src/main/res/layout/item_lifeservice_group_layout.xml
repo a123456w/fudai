@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/division_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="107dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/textmarginleft"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:scaleType="centerCrop"
+            />
+
+        <LinearLayout
+
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_toRightOf="@+id/iv_pic"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/color3_size15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="泰洁洗衣（昌平店）" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/rb_grade"
+                    style="@android:style/Widget.RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/ratingbar_drawable"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="5分"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/color6_size13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="洗衣店" />
+
+                <TextView
+                    style="@style/color6_size13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginRight="16dp"
+                    android:gravity="right"
+                    android:text="昌平镇2.5km" />
+                <!--   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="3.5km"
+                       android:layout_marginLeft="@dimen/spacing_large"
+                       android:layout_gravity="center_vertical"/>-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/division_color" />
+
+</LinearLayout>
+

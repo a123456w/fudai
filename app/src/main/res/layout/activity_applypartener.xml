@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin">
+
+    <LinearLayout
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/border_gray">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_person"/>
+
+        <com.qlzx.mylibrary.widget.EditTextClearAble
+            android:layout_marginLeft="7dp"
+            android:id="@+id/et_name"
+            android:maxLength="16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:drawableRight="@drawable/ic_delete_red"
+            android:gravity="start|center_vertical"
+            android:hint="请输入真实姓名"
+            android:textColorHint="@color/hint_color"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/border_gray">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone"/>
+
+        <com.qlzx.mylibrary.widget.EditTextClearAble
+            android:layout_marginLeft="7dp"
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLength="50"
+            android:drawableRight="@drawable/ic_delete_red"
+            android:gravity="start|center_vertical"
+            android:hint="请输入电话"
+            android:textColorHint="@color/hint_color"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_applay"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:text="申请"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:background="@drawable/round_corner_red"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/applays">
+
+    </LinearLayout>
+
+
+</LinearLayout>

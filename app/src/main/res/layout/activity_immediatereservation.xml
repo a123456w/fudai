@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_reverse_order_top_layout"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/color3_size15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="金华四季 KTV"
+
+            />
+
+        <TextView
+            style="@style/color6_size12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="主题小房(1-5人)    任唱6小时"
+
+            />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc"></View>
+
+        <TextView
+            style="@style/color9_size12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="2018年1月2日——2018年1月3日"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:text="金额"
+                android:gravity="center"
+                android:textColor="@color/text_color3"
+                android:layout_marginLeft="@dimen/spacing_normal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_marginLeft="16dp"
+                android:hint="请输入金额"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"
+            android:layout_marginLeft="@dimen/spacing_normal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:text="可用余额："
+                android:gravity="center"
+                android:textColor="@color/text_color3"
+                android:layout_marginLeft="@dimen/spacing_normal"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:text="20.00"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:textColor="#e75252"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/enture_pay_money_bg"
+        android:gravity="center"
+        android:text="立即支付"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+   <!-- <TextView
+
+        android:id="@+id/tv_pay_fortunella_venosa"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_goumaijingdou"
+        android:gravity="center"
+        android:text="购买金豆"
+        android:textColor="@color/text_red"
+        android:textSize="18sp" />-->
+</LinearLayout>

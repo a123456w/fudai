@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/car_name"
+        style="@style/color3_size15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/car_price"
+        tools:text="燕京啤酒" />
+
+
+    <TextView
+        android:id="@+id/car_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@+id/car_ll"
+        tools:text="￥10.00"
+        android:textColor="#e75252"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/car_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/iv_subtract"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:src="@drawable/reduce" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="28dp"
+            android:layout_height="19dp"
+            android:background="@drawable/border_gray_2"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/text_color" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:src="@drawable/add" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:background="@color/color_eeeeee"></View>
+</RelativeLayout>

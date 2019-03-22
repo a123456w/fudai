@@ -1,0 +1,64 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="textSize">16dp</dimen>
+    <dimen name="layoutdividerspace">1.2dp</dimen>
+    <dimen name="indexTextSize">15sp</dimen>
+    <dimen name="tabTextSize">12sp</dimen>
+    <dimen name="indexTextImageMargin">10dp</dimen>
+    <dimen name="tabTextImageMargin">5dp</dimen>
+    <dimen name="titleBarHeight">44dp</dimen>
+    <dimen name="titleBarPadding">15dp</dimen>
+    <dimen name="titleBarTextSize">20sp</dimen>
+    <dimen name="bannerHeight">211dp</dimen>
+    <dimen name="bannerShortHeight">151dp</dimen>
+    <dimen name="margin">15dp</dimen>
+    <dimen name="textmarginleft">15dp</dimen>
+    <dimen name="layouthight">44dp</dimen>
+    <dimen name="listPaddingLeft">7.5dp</dimen>
+    <dimen name="tvname">18sp</dimen>
+    <dimen name="commonPadding">12dp</dimen>
+    <dimen name="commonMargin">12dp</dimen>
+    <dimen name="detailCommonMargin">16dp</dimen>
+    <dimen name="drawablepadding">5dp</dimen>
+    <dimen name="scrollviewmargin">22dp</dimen>
+
+    <dimen name="custom_section_height">36dp</dimen>
+    <!-- 字体大小 -->
+    <dimen name="font_larger">20sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_normal">15sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_tiny">10sp</dimen>
+
+    <!-- 控件之间的距离 -->
+    <dimen name="spacing_large">20dp</dimen>
+    <dimen name="spacing_normal">15dp</dimen>
+    <dimen name="spacing_small">10dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+    <dimen name="spacing_layout_padding">10dp</dimen>
+    <dimen name="spacing_layout_margin">10dp</dimen>
+
+    <!-- 描述性文字item项的高 -->
+    <dimen name="text_item_height">43dp</dimen>
+    <dimen name="input_method_spacing">2px</dimen>
+
+
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp0">0.5dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="sp16">16sp</dimen>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+    <dimen name="dp80">80dp</dimen>
+    <dimen name="dp60">60dp</dimen>
+    <dimen name="dp30">30dp</dimen>
+    <dimen name="dp6">6dp</dimen>
+
+    <dimen name="sw">15dp</dimen>
+    <dimen name="dp15">15dp</dimen>
+    <dimen name="dp85">85dp</dimen>
+</resources>

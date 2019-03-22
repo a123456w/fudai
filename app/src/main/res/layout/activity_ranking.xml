@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_garade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/bg_rankinga"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_newcar"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_garade_buta"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="销量"
+            android:textColor="@drawable/selector_garade_textcolor"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_red" />
+
+        <RadioButton
+            android:id="@+id/rb_olddcar"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_garade_buta"
+            android:button="@null"
+            android:gravity="center"
+            android:text="评分"
+            android:textColor="@drawable/selector_garade_textcolor"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_red" />
+
+        <RadioButton
+            android:id="@+id/rb_newhouse"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_garade_buta"
+            android:button="@null"
+            android:gravity="center"
+            android:text="待返金"
+            android:textColor="@drawable/selector_garade_textcolor"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_red" />
+
+        <RadioButton
+            android:id="@+id/rb_oldhouse"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_garade_buta"
+            android:button="@null"
+            android:gravity="center"
+            android:text="推荐"
+            android:textColor="@drawable/selector_garade_textcolor"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_red" />
+
+        <RadioButton
+            android:id="@+id/rb_commercial_property"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_garade_buta"
+            android:button="@null"
+            android:gravity="center"
+            android:text="佣金"
+            android:textColor="@drawable/selector_garade_textcolor"
+            android:textSize="13sp" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/gray_bg" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.canyinghao.canrefresh.CanRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/division_color">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="20dp"
+                            android:drawableTop="@drawable/image_empty"
+                            android:gravity="center_horizontal" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view_placeholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#99000000"
+                        android:focusable="true"
+                        android:visibility="gone" />
+
+                    <ListView
+                        android:scrollbars="none"
+                        android:id="@+id/can_content_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                android:id="@id/can_refresh_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                android:id="@id/can_refresh_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.canyinghao.canrefresh.CanRefreshLayout>
+    </FrameLayout>
+</LinearLayout>

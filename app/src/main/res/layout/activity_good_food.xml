@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.GoodFoodActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.canyinghao.canrefresh.CanRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/can_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_level"
+                        android:layout_width="match_parent"
+                        android:layout_height="113dp">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <include layout="@layout/wide_line" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp">
+
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/tv_businessarea"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:paddingLeft="15dp"-->
+                            <!--android:text="附近店铺"-->
+                            <!--android:textColor="@color/textcolor3"-->
+                            <!--android:textSize="15sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/tv_all"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_marginRight="15dp"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:text="全部"-->
+                            <!--android:textColor="@color/textcolor9"-->
+                            <!--android:textSize="12sp"-->
+                            <!--android:visibility="gone" />-->
+
+                        <!-- <View
+                             android:layout_width="match_parent"
+                             android:layout_height="1dp"
+                             android:layout_alignParentBottom="true"
+                             android:background="@color/lineColor" />-->
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#eeeeee" />
+
+                    <com.qlzx.mylibrary.widget.NoScrollListView
+                        android:id="@+id/nslv_exposure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/scrollviewmargin" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="20dp"
+                            android:drawableTop="@drawable/image_empty"
+                            android:gravity="center_horizontal"
+                            android:text="没有相关内容" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+            <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                android:id="@id/can_refresh_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                android:id="@id/can_refresh_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </com.canyinghao.canrefresh.CanRefreshLayout>
+
+    </FrameLayout>
+</LinearLayout>

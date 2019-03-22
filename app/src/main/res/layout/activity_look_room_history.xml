@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/division_color"
+    android:orientation="vertical"
+    tools:context="com.ruirong.chefang.personalcenter.MyRoomTimeActivity">
+
+
+    <RadioGroup
+        android:id="@+id/rg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_my_room_time_radiogroup"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_bottom1"
+            style="@style/total_evaluate_btn_style"
+            android:layout_width="120dp"
+            android:layout_height="44dp"
+            android:background="@drawable/total_evaluate_btn_left_bg"
+            android:checked="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="已看"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb_bottom2"
+            style="@style/total_evaluate_btn_style"
+            android:layout_width="120dp"
+            android:layout_height="44dp"
+            android:background="@drawable/total_evaluate_btn_right_bg"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="未看"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.canyinghao.canrefresh.CanRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/can_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                android:id="@id/can_refresh_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                android:id="@id/can_refresh_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </com.canyinghao.canrefresh.CanRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="20dp"
+                android:drawableTop="@drawable/image_empty"
+                android:gravity="center_horizontal"
+                android:text="没有相关内容" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_all_product"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/halving_line_color" />
+
+        <CheckBox
+            android:id="@+id/tv_all_check"
+            style="@style/CheckBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@id/tv_all_check"
+            android:text="全选"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_all_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/bg_delete_item"
+            android:text="删除"
+            android:textColor="#dd0f1b"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ruirong.chefang.activity.MapActivity">
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mv_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+    </com.baidu.mapapi.map.MapView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_myback"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/view_top"
+            android:padding="13dp"
+            android:src="@drawable/ic_black_back"
+            android:textColor="#00000000" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view_top"
+            android:layout_toRightOf="@+id/iv_myback"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_text_size"
+            tools:text="商家地图" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            tools:text="花田煮（汉城国际安康一店）" />
+
+        <TextView
+            android:id="@+id/tv_distanse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="15dp"
+            tools:text="1.7km" />
+
+        <TextView
+            android:id="@+id/tv_detailaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shopname"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            tools:text="安康市韩斌去安康市韩斌去安康市韩斌去安康市韩斌去dsafsddsafdfdsafd" />
+
+        <TextView
+            android:id="@+id/tv_togo"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_below="@+id/tv_detailaddress"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/iv_togothere"
+            android:drawablePadding="5dp"
+            android:text="查看路线及周边" />
+    </RelativeLayout>
+
+</FrameLayout>

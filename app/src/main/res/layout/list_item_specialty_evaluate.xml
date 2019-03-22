@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        style="@style/color6_size14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:text="来自外星的猫" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <RatingBar
+            android:id="@+id/rb_grade"
+            style="@android:style/Widget.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_marginTop="10dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressDrawable="@drawable/ratingbar_drawable" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/color6_size14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="10dp"
+            android:text="2017-12-11" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_number_of_orders"
+        style="@style/color3_size14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:text="真的不错高端大气上档次，很干净，音响质量很好，服务员态度也挺好的" />
+
+    <com.qlzx.mylibrary.widget.NoScrollGridView
+        android:id="@+id/evaluate_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:numColumns="3">
+
+    </com.qlzx.mylibrary.widget.NoScrollGridView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"></View>
+</LinearLayout>

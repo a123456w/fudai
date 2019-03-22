@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="#e75252">
+
+            <ImageView
+                android:layout_width="87dp"
+                android:layout_height="63dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="51dp"
+                android:src="@drawable/wallet" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/order_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    tools:text="等待买家付款"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/order_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    tools:text="剩余支付时间"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <cn.iwgang.countdownview.CountdownView
+                    android:id="@+id/cv_countdownView"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:isHideTimeBackground="false"
+                    app:isShowDay="true"
+                    app:isShowHour="true"
+                    app:isShowMillisecond="false"
+                    app:isShowMinute="true"
+                    app:isShowSecond="false"
+                    app:isTimeTextBold="false"
+                    app:suffixDay="天"
+                    app:suffixGravity="center"
+                    app:suffixHour="小时"
+                    app:suffixLRMargin="1dp"
+                    app:suffixMinute="分钟"
+                    app:suffixSecond="秒"
+                    app:suffixTextColor="#fff"
+                    app:suffixTextSize="12sp"
+                    app:timeBgBorderRadius="1dp"
+                    app:timeBgBorderSize="1dp"
+                    app:timeBgColor="#e75252"
+                    app:timeBgDivisionLineSize="0dp"
+                    app:timeBgRadius="1dp"
+                    app:timeBgSize="0dp"
+                    app:timeTextColor="#fff"
+                    app:timeTextSize="10sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goods_address"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:visibility="gone"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_consignee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="15dp"
+                android:text="收货人:驴优客"
+                android:textColor="@color/textcolor3"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="39dp"
+                android:layout_marginTop="15dp"
+                android:text="153888******1"
+                android:textColor="@color/textcolor3"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/order_details_image_position"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/image_location" />
+
+            <TextView
+                android:id="@+id/detailed_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="43dp"
+                android:layout_toRightOf="@id/order_details_image_position"
+                android:lines="2"
+                android:text="收货地址：陕西省安康市汉滨区大桥南路30号陕西睿容市场营销服务有限公司"
+                android:textColor="@color/textcolor6"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="43dp"
+                android:background="@drawable/fanhui" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="@color/color_f6f6f6" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/shopping_order" />
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:text="驴优客商城"
+                android:textColor="@color/textcolor3"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/dibujiantou" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_f6f6f6" />
+
+        <com.qlzx.mylibrary.widget.NoScrollListView
+            android:id="@+id/goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.qlzx.mylibrary.widget.NoScrollListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_f6f6f6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center_vertical"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/order_refund"
+                style="@style/colordd0f1b_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_settlement"
+                android:text="退款"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="@color/color_f6f6f6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="实付款"
+                android:textColor="@color/textcolor3"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/real_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:text="￥"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="@color/color_f6f6f6" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_contact_the_seller"
+                android:drawableLeft="@drawable/imageg_contact_seller"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:paddingLeft="36dp"
+                android:paddingRight="36dp"
+                android:text="联系卖家"
+                android:textColor="@color/textcolor3"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_code_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@color/color_f6f6f6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="核销码"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/textcolor3"
+                android:textSize="15sp" />
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="@color/color_f6f6f6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_number"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="实付款"
+                android:textColor="@color/textcolor3"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/order_establish_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="实付款"
+                android:textColor="@color/textcolor3"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_f6f6f6" />
+
+
+        <!--待付款的 按钮  未过期-->
+        <RelativeLayout
+            android:id="@+id/pending_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/order_all_tv_payment"
+                style="@style/colordd0f1b_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_settlement"
+                android:text="付款"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/order_all_tv_cancel_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/order_all_tv_payment"
+                android:background="@drawable/bg_delete"
+                android:text="取消订单"
+                android:textColor="@color/nwb_personal_setup_textcolor6"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_contact_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_toLeftOf="@+id/order_all_tv_cancel_order"
+                android:background="@drawable/bg_delete"
+                android:text="联系卖家"
+                android:textColor="@color/nwb_personal_setup_textcolor6"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <!--售后 按钮-->
+        <RelativeLayout
+            android:id="@+id/service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/order_all_tv_deliver"
+                style="@style/colordd0f1b_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_settlement"
+                android:text="售后"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <!--确认收货 按钮-->
+        <RelativeLayout
+            android:id="@+id/goods_receipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/order_all_tv_confirm"
+                style="@style/colordd0f1b_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_settlement"
+                android:text="确认订单"
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+
+        <!--待评价 按钮-->
+        <RelativeLayout
+            android:id="@+id/to_be_evaluated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/order_all_tv_evaluate"
+                style="@style/colordd0f1b_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_settlement"
+                android:text="评价"
+                android:textSize="12dp"
+
+                />
+
+        </RelativeLayout>
+
+        <!--删除订单-->
+        <RelativeLayout
+            android:id="@+id/customer_del_lr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/customer_del"
+                style="@style/colordd0f1b_size14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_settlement"
+                android:text="删除订单"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_code"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitCenter"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

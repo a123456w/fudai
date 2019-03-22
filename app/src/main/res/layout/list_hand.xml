@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="综合评分"
+            android:textColor="@color/text_color3"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/head_branch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/text_color3"
+            android:textSize="22sp" />
+
+
+        <com.ruirong.chefang.view.MyRatingBar
+            android:id="@+id/head_rb_grade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:isIndicator="true"
+            app:progressColor="@color/star_color"
+            app:rating="0"
+            app:space="5dp"
+            app:starDrawable="@drawable/ic_star_border"
+            app:starHeight="17.5dp"
+            app:starWidth="17.5dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/gray" />
+</LinearLayout>

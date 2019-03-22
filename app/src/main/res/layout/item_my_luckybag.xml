@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_shop_business"
+            style="@style/color3_size14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="返还时间" />
+
+        <TextView
+            style="@style/color3_size14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:text="返还金额" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_harvest_time"
+            style="@style/color9_size12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2017/12/03  02:30" />
+
+        <TextView
+            android:id="@+id/tv_harvest_number"
+            style="@style/colore75252_size12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="0.04" />
+
+
+    </RelativeLayout>
+
+<include layout="@layout/list_item_division_line"></include>
+</LinearLayout>

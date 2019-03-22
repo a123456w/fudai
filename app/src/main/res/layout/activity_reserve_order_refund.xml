@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_tijioa">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/js_image_title"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        style="@style/color3_size15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:ellipsize="end"
+                        tools:text="汉庭北京昌平万科广场酒店" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="49dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_specif"
+                            style="@style/color9_size12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="精选大床房" />
+
+                        <!--<TextView-->
+                        <!--style="@style/color9_size12"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:text="23㎡有" />-->
+
+                        <!--<TextView-->
+                        <!--style="@style/color9_size12"-->
+
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:text="1.8/2.0" />-->
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        style="@style/color9_size12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="70dp"
+                        tools:text="12月21日-12月22日" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="90dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            style="@style/color6_size12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="房价：" />
+
+                        <TextView
+                            android:id="@+id/tv_money"
+                            style="@style/colore75252_size12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            tools:text="¥398.00" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/color_f6f6f6" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/tv_reasons_for_refunds"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="退款原因 "
+                        android:textColor="@color/textcolor3"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_reasons_for_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/reasons_for_refunds_pic"
+                        android:gravity="center"
+                        android:text="请选择"
+                        android:textColor="@color/textcolor6"
+                        android:textSize="16dp" />
+
+
+                    <ImageView
+                        android:id="@+id/reasons_for_refunds_pic"
+                        android:layout_width="10dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/jiantou" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/color_f6f6f6" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="132dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="退款金额:"
+                        android:textColor="@color/textcolor3"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/goods_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        tools:text="￥58.00"
+                        android:textColor="@color/red"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:visibility="gone"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/et_refund_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#f4f4f4"
+                        tools:hint="最多￥58.00，含发货邮费￥0.00"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/red"
+                        android:textSize="16dp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="退款说明:"
+                        android:textColor="@color/textcolor3"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/tv_explain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="选填"
+                        android:paddingLeft="6dp"
+                        android:textColor="#999999"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/color_f6f6f6" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <TextView
+        android:id="@+id/tv_tijioa"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>

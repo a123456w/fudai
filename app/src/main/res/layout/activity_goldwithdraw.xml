@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llt_goldwithdraw"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_bankcard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layouthight"
+        android:background="@drawable/setting_item_selector"
+        android:drawableRight="@drawable/right_arrows"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/textmarginleft"
+        android:paddingRight="@dimen/textmarginleft"
+        android:hint="点我选择兑现银行卡"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layouthight">
+
+        <TextView
+            android:id="@+id/moneysum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/textmarginleft"
+            android:text="金额:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_withdrawsum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:inputType="number"
+            android:layout_toRightOf="@+id/moneysum"
+            android:hint="请输入兑现的金豆数量" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/textmarginleft"
+            android:src="@drawable/right_arrows" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background="@color/gray"/>
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layouthight"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn"
+        android:text="确定"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

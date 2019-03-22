@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ruirong.chefang"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/goods_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:minLines="2"
+                android:textColor="@color/textcolor3"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/goods_type"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/textcolor6"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/new_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:lines="2"
+                android:text="￥88.00"
+                android:textColor="@color/textcolor3"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/old_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="￥88.00"
+                android:textColor="@color/textcolor6"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/goods_num"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="x1"
+                android:textColor="@color/textcolor6"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/order_refund_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/color_f6f6f6" />
+
+        <TextView
+            android:id="@+id/order_refund"
+            style="@style/colordd0f1b_size14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/bg_settlement"
+            android:text="退款"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

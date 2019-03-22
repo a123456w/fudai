@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corner_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/icon_5" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="充值成功！"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+
+
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:id="@+id/tv_recharge"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="继续充值"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:background="@drawable/round_corner_orange"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_ok"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="确定"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:background="@drawable/round_corner_reds"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

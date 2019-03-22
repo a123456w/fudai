@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_nearby_city"
+            android:layout_width="90dp"
+            android:layout_height="44dp"
+            android:text="附近"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:button="@drawable/nearby_list_bg"
+            android:textColor="@color/nearby_list_text_color"
+            android:textSize="14sp"/>
+
+
+
+</RelativeLayout>

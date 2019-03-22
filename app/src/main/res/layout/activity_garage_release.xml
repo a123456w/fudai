@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="公司名"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/font_normal" />
+
+        <EditText
+            android:id="@+id/et_corporate_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:hint="请输入公司名称"
+            android:textColor="@color/text_color9"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="姓   名"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/font_normal" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:hint="请输入您的姓名"
+            android:textColor="@color/text_color9"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="电   话"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/font_normal" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:hint="请输入您的手机号"
+            android:textColor="@color/text_color9"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="请选择"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/tv_garade"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="新车"
+            android:textColor="@color/text_color6"
+            android:textSize="@dimen/font_normal" />
+
+        <RelativeLayout
+            android:id="@+id/iv_garade"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/selector_garage" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="22dp"
+        android:layout_height="32dp">
+        <RadioGroup
+            android:id="@+id/rg_garade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/rb_newcar"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="@dimen/marginleft"
+                android:layout_weight="1"
+                android:background="@drawable/selector_garade_but"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="新车"
+                android:textColor="@drawable/selector_garade_textcolor"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_olddcar"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="@dimen/spacing_layout_margin"
+                android:layout_weight="1"
+                android:background="@drawable/selector_garade_but"
+                android:button="@null"
+                android:gravity="center"
+                android:text="二手车"
+                android:textColor="@drawable/selector_garade_textcolor"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_newhouse"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="@dimen/spacing_layout_margin"
+                android:layout_weight="1"
+                android:background="@drawable/selector_garade_but"
+                android:button="@null"
+                android:gravity="center"
+                android:text="新房"
+                android:textColor="@drawable/selector_garade_textcolor"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_oldhouse"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="@dimen/spacing_layout_margin"
+                android:layout_weight="1"
+                android:background="@drawable/selector_garade_but"
+                android:button="@null"
+                android:gravity="center"
+                android:text="二手房"
+                android:textColor="@drawable/selector_garade_textcolor"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_commercial_property"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="@dimen/spacing_layout_margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="1"
+                android:background="@drawable/selector_garade_but"
+                android:button="@null"
+                android:gravity="center"
+                android:text="商业房产"
+                android:textColor="@drawable/selector_garade_textcolor"
+                android:textSize="13sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/bg_reservations"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+</LinearLayout>

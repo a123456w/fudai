@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请绑定持卡人本人的银行卡"
+        android:textSize="13sp"
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:background="@color/gray_bg"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/layouthight"
+      android:orientation="horizontal">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="@dimen/textmarginleft"
+          android:text="持卡人:"
+          android:gravity="center_vertical"
+          android:textColor="@color/text_color6"/>
+      <EditText
+          android:layout_weight="1"
+          android:id="@+id/et_cardholder"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@null"
+          android:gravity="center_vertical"
+          android:hint="请输入本人真实姓名"
+          android:layout_marginLeft="5dp"
+          android:textSize="16sp"/>
+      <ImageView
+          android:onClick="onClick"
+          android:id="@+id/iv_person"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:src="@drawable/ic_warn"
+          android:layout_marginRight="10dp"
+          android:layout_gravity="center_vertical"/>
+  </LinearLayout>
+    <include layout="@layout/line"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/layouthight"
+      android:orientation="horizontal">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="@dimen/textmarginleft"
+          android:text="账     号:"
+          android:gravity="center_vertical"
+          android:textColor="@color/text_color6"/>
+      <EditText
+          android:layout_weight="1"
+          android:id="@+id/et_cardnum"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@null"
+          android:inputType="number"
+          android:gravity="center_vertical"
+          android:hint="请输入本人银行卡号"
+          android:textSize="16sp"
+          android:layout_marginLeft="5dp"/>
+      <ImageView
+          android:onClick="onClick"
+          android:id="@+id/iv_id"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:src="@drawable/ic_warn"
+          android:layout_marginRight="10dp"
+          android:layout_gravity="center_vertical"/>
+  </LinearLayout>
+    <include layout="@layout/line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layouthight"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/textmarginleft"
+            android:text="证件号:"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color6"/>
+        <EditText
+            android:id="@+id/et_idcardnum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="text"
+            android:gravity="center_vertical"
+            android:hint="请输入本人身份证号"
+            android:textSize="16sp"
+            android:digits="0123456789xX"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+    <include layout="@layout/line"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/layouthight"
+      android:orientation="horizontal">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="@dimen/textmarginleft"
+          android:text="银    行:"
+          android:gravity="center_vertical"
+          android:textColor="@color/text_color6"/>
+     <Spinner
+         android:id="@+id/sp_bankname"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginRight="@dimen/textmarginleft"
+        />
+  </LinearLayout>
+    <include layout="@layout/line"/>
+    <Button
+        android:id="@+id/btn_sureadd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layouthight"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn"
+        android:text="确认添加"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

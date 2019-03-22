@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="@dimen/textmarginleft"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/spacing_small">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商圈头条       这家红遍房产圈的店强势进入北京！凌晨2点..."
+                android:textSize="@dimen/spacing_normal"
+                android:textColor="@color/text_color3"
+                android:layout_marginTop="21dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="155698"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_color9"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人浏览"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_color9"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

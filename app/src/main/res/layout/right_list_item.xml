@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/item_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/iv_goods_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    style="@style/color3_size15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    tools:text="燕京啤酒" />
+
+                <TextView
+                    android:id="@+id/content_one"
+                    style="@style/color6_size12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    tools:text="570ml/瓶" />
+
+                <TextView
+                    android:id="@+id/content_tow"
+                    style="@style/color6_size12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/content_ont"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    tools:text="月售24" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    tools:text="￥10"
+                    android:textColor="#e75252"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_reduce_less"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/reduce"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="28dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/border_gray_2"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/text_color"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_plus_add"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/add" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

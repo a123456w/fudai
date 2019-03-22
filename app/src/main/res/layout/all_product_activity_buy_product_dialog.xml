@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/category_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/category_top"
+        android:background="#90000000" />
+
+    <RelativeLayout
+        android:id="@+id/category_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/listview"
+        android:background="#eeeeee">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/textmarginleft"
+            android:gravity="center"
+            android:text="已选商品"
+            android:textColor="#000000"
+            android:textSize="@dimen/textSize15" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="49dp"
+            android:src="@drawable/garbage_icon" />
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="清空"
+            android:textColor="@color/text_color6"
+            android:textSize="@dimen/textSize13" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true"
+        android:divider="@null"></ListView>
+
+
+</RelativeLayout>

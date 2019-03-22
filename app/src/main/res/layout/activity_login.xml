@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/border_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone" />
+
+        <com.qlzx.mylibrary.widget.EditTextClearAble
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:background="@null"
+            android:digits="@string/account_rule"
+            android:drawableRight="@drawable/ic_delete_red"
+            android:gravity="start|center_vertical"
+            android:hint="请输入手机号或邮箱"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pw" />
+
+        <com.qlzx.mylibrary.widget.EditTextClearAble
+            android:id="@+id/et_pw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:background="@null"
+            android:drawableRight="@drawable/ic_delete_red"
+            android:gravity="start|center_vertical"
+            android:hint="请输入密码"
+            android:imeOptions="actionGo"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/titleBarColor"
+        android:textSize="13sp"
+        android:visibility="gone"
+        tools:text="账号或密码错误" />
+
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_corner_green"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_corner_green"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_lost_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="忘记密码"
+            android:textColor="@color/text_color"
+            android:textSize="13sp" />
+
+        <!--  <TextView
+              android:id="@+id/tv_register"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="注册"
+              android:textSize="13sp"
+              android:textColor="@color/text_color"
+              android:drawableRight="@drawable/ic_go"
+              android:drawablePadding="5dp"
+              android:gravity="center_vertical"/>-->
+
+    </RelativeLayout>
+</LinearLayout>

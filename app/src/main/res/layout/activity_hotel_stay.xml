@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/division_color">
+
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/can_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"/>
+
+
+                    <include layout="@layout/layout_hotel"/>
+                    <View
+                        android:layout_width="360dp"
+                        android:layout_height="1dp"
+                        android:background="#E5E5E5"
+                        android:layout_gravity="center_horizontal"/>
+
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tab_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@color/white"
+                        app:tabIndicatorColor="@color/titleBarColor"
+                        app:tabMode="fixed"
+                        app:tabGravity="fill"
+                        app:tabSelectedTextColor="@color/titleBarColor"
+                        app:tabTextColor="@color/text_color3" />
+
+                    <android.support.v7.widget.RecyclerView
+
+                        android:id="@+id/rlv_foods"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </android.support.v7.widget.RecyclerView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:drawablePadding="20dp"
+                            android:drawableTop="@drawable/image_empty"
+                            android:gravity="center_horizontal"
+                            android:text="没有相关内容" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+    </FrameLayout>
+
+</LinearLayout>

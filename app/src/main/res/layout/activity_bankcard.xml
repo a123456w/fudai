@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeToLoadLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:default_to_loading_more_scrolling_duration="500"
+    app:load_more_complete_delay_duration="0"
+    app:load_more_final_drag_offset="@dimen/load_more_final_offset_google"
+    app:load_more_trigger_offset="@dimen/load_more_trigger_offset_google"
+    app:refresh_final_drag_offset="@dimen/refresh_final_offset_google"
+    app:refresh_trigger_offset="@dimen/refresh_trigger_offset_google"
+    app:swipe_style="above">
+
+    <include
+        android:id="@id/swipe_refresh_header"
+        layout="@layout/layout_google_hook_header" />
+
+    <LinearLayout
+        android:id="@id/swipe_target"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--
+            android:background="@drawable/selector_btn_yellow"
+-->
+            <Button
+                android:id="@+id/btn_addbankcard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layouthight"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/enture_pay_money_bg"
+                android:text="+添加银行卡"
+                android:textColor="@color/white" />
+
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout_authentication"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="首次添加银行卡需完成身份认证,点此" />
+
+                <TextView
+                    android:id="@+id/tv_authentication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即认证"
+                    android:textColor="@color/titleBarColor"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <include
+        android:id="@id/swipe_load_more_footer"
+        layout="@layout/layout_google_hook_footer" />
+</com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+

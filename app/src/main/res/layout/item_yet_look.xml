@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/tv_is_check"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            style="@style/CheckBoxStyle"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+
+            <ImageView
+                android:id="@+id/item_lookroom_img"
+                android:layout_width="106dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/yet_look" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_lookroom_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="安康小区"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/font_normal"
+                android:lines="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/locationsss" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="预约时间："
+                    android:textColor="@color/text_color6"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/item_lookroom_time"
+                    android:layout_width="wrap_content"
+                    android:lines="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/text_color6"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/locationsss" />
+
+                <TextView
+                    android:id="@+id/item_lookroom_address"
+                    android:layout_width="wrap_content"
+                    android:lines="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="昌平区政府西路8号院"
+                    android:textColor="@color/text_color6"
+                    android:textSize="@dimen/textSize13" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/list_item_division_line"></include>
+</LinearLayout>

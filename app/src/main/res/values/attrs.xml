@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumberPicker">
+        <attr name="unitHight" format="dimension"/>
+        <attr name="normalTextSize" format="dimension"/>
+        <attr name="selecredTextSize" format="dimension"/>
+        <attr name="itemNumber" format="integer"/>
+        <attr name="normalTextColor" format="color"/>
+        <attr name="selecredTextColor" format="color"/>
+        <attr name="lineColor" format="color"/>
+        <attr name="maskHight" format="dimension"/>
+        <attr name="noEmpty" format="boolean"/>
+        <attr name="isEnable" format="boolean"/>
+    </declare-styleable>
+</resources>

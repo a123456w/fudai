@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="46dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+           />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            tools:text="福返酒店"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            tools:text="超值服务"
+            android:textColor="@color/text_color9"
+            android:textSize="@dimen/font_small" />
+    </LinearLayout>
+
+</LinearLayout>

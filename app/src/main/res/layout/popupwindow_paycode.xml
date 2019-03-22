@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/division_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingBottom="45dp">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            tools:text="名字" />
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            tools:text="3216534654" />
+
+        <TextView
+            android:id="@+id/tv_roletype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            tools:text="类型" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_roletype">
+
+            <TextView
+                android:id="@+id/transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="转账金额"
+                android:textColor="@color/black" />
+            <!--    <ImageView
+                    android:id="@+id/money"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/black"
+                    android:src="@drawable/transfertwo"
+                    android:layout_below="@+id/transfer"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="33dp"
+                    android:textSize="28sp"
+                    />-->
+
+            <ImageView
+                android:id="@+id/money"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/transfer"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="33dp"
+                android:src="@drawable/renminbi"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/et_transfersum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/transfer"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/money"
+                android:background="@null"
+                android:textSize="35sp"
+                tools:text="25" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_below="@+id/et_transfersum"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layouthight"
+        android:layout_below="@+id/et_transfersum"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/selector_btn"
+        android:text="确认转账"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

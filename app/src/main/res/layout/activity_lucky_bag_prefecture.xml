@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ruirong.chefang.activity.LuckyBagPrefectureActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="49dp"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/bag_pic"
+                android:layout_width="match_parent"
+                android:layout_height="210dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/text_red"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/bg_text_quan"
+                    android:gravity="center"
+                    android:text="优"
+                    android:textColor="@color/text_red"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center"
+                    android:text="品质保障"
+                    android:textColor="#fefefe"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="bottom"
+                    android:text="臻选尖货 \n  购物无忧"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:text="距结束仅剩"
+                        android:textColor="#fefefe"
+                        android:textSize="11sp" />
+
+                    <cn.iwgang.countdownview.CountdownView
+                        android:id="@+id/cv_countdownView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:isHideTimeBackground="false"
+                        app:isShowDay="true"
+                        app:isShowHour="true"
+                        app:isShowMillisecond="false"
+                        app:isShowMinute="true"
+                        app:isShowSecond="true"
+                        app:isTimeTextBold="false"
+                        app:suffixDay="天"
+                        app:suffixGravity="center"
+                        app:suffixHour="时"
+                        app:suffixLRMargin="1dp"
+                        app:suffixMinute="分"
+                        app:suffixSecond=""
+                        app:suffixTextColor="#fff"
+                        app:suffixTextSize="12sp"
+                        app:timeBgBorderColor="#E8E8E8"
+                        app:timeBgBorderRadius="1dp"
+                        app:timeBgBorderSize="0dp"
+                        app:timeBgColor="#000"
+                        app:timeBgDivisionLineSize="@null"
+                        app:timeBgRadius="1dp"
+                        app:timeBgSize="0dp"
+                        app:timeTextColor="#fff"
+                        app:timeTextSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sale_name"
+                    style="@style/color3_size15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="铁观音茶叶盒装 安溪浓香型乌龙茶   新茶500克木质年华送礼" />
+
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="63dp"
+                    android:src="@drawable/fudai_pic" />
+
+                <TextView
+                    android:id="@+id/sale_new_price"
+                    style="@style/colore75252_size18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="59dp"
+                    android:text="118" />
+
+                <TextView
+                    android:id="@+id/sale_old_price"
+                    style="@style/color9_size12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_toRightOf="@+id/sale_new_price"
+                    android:text="￥124" />
+
+                <TextView
+                    android:id="@+id/sale_amount"
+                    style="@style/color9_size13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="60dp"
+                    android:text="销量：1230" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@color/color_eeeeee"></View>
+
+            <RelativeLayout
+                android:id="@+id/detailed_information"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/textmarginleft"
+                    android:gravity="center"
+                    android:text="产品参数"
+                    android:textColor="@color/text_color3"
+                    android:textSize="@dimen/textSize15" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/fanhui" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/gray" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_product_comment"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/textmarginleft"
+                    android:gravity="center"
+                    android:text="商品评价"
+                    android:textColor="@color/text_color3"
+                    android:textSize="@dimen/textSize15" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/fanhui" />
+
+                <TextView
+                    android:id="@+id/evaluate_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="33dp"
+                    android:gravity="center"
+                    android:text="(4656人评价)"
+                    android:textColor="@color/text_color9"
+                    android:textSize="@dimen/textSize12" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@color/color_eeeeee"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:id="@+id/tv_commodity_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="商品详情"
+                    android:textColor="@color/text_color3"
+                    android:textSize="@dimen/textSize15" />
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="9dp"
+                    android:layout_toLeftOf="@id/tv_commodity_details"
+                    android:background="#666666" />
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="1dp"
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:layout_toRightOf="@id/tv_commodity_details"
+                    android:background="#666666" />
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </WebView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_showings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#dd0f1b"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>
+

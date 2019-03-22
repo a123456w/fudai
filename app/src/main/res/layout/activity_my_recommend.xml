@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/division_color"
+    tools:context="com.ruirong.chefang.personalcenter.MyRecommendActivity">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_referral_history"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layouthight"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/color6_size15"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/textmarginleft"
+            android:text="推荐记录" />
+
+        <ImageView
+            android:id="@+id/icon_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/textmarginleft"
+            android:src="@drawable/right_arrows" />
+
+       <!-- <TextView
+            android:id="@+id/tv_nickname"
+            style="@style/color9_size13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/icon_1"
+            android:text="设置昵称"
+
+            />-->
+    </RelativeLayout>
+
+    <include layout="@layout/list_item_division_line"></include>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_referral_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layouthight"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/color6_size15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/textmarginleft"
+            android:text="我的推荐码" />
+
+        <ImageView
+            android:id="@+id/icon_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/textmarginleft"
+            android:src="@drawable/right_arrows" />
+
+      <!--  <TextView
+            android:id="@+id/tv_authentication"
+            style="@style/color9_size13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/icon_3"
+            android:text="未认证" />-->
+    </RelativeLayout>
+</LinearLayout>

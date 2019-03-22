@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ry_recy"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/lly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ry_recy"
+        android:layout_marginTop="23dp"
+        android:background="@color/white"
+        android:layout_marginRight="@dimen/common_margin_15"
+        android:layout_marginLeft="@dimen/common_margin_15"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用餐人数"
+            android:textColor="#ff666666"
+            android:textSize="13sp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ry_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        <TextView
+            android:id="@+id/tv_serve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="餐厅服务"
+            android:layout_marginTop="22dp"
+            android:textSize="13sp"
+            android:textColor="#ff666666"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ry_serve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bll"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_below="@+id/lly"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_storemoney"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#90C42F"
+            android:gravity="center"
+            android:text="重置"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_paybill"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#006A35"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

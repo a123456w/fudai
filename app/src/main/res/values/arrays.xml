@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string-array name="bankcard">
+        <item>中国工商银行</item>
+        <item>中国农业银行</item>
+        <item>中国建设银行</item>
+        <item>中国招商银行</item>
+        <item>中国农商银行</item>
+        <item>中国北京银行</item>
+    </string-array>
+    <string-array name="languages">
+        <item>二手车</item>
+        <item>二手房 </item>
+    </string-array>
+    <!--自定义属性 -->
+    <declare-styleable name="ClipViewLayout">
+        <attr name="clipType" format="enum">
+            <enum name="circle" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="mHorizontalPadding" format="dimension" />
+        <attr name="clipBorderWidth" format="dimension" />
+    </declare-styleable>
+
+    <!-- 自定义RatingBar属性 -->
+    <declare-styleable name="MyRatingBar">
+        <attr name="progressColor" format="color"></attr>
+        <attr name="starWidth" format="dimension"></attr>
+        <attr name="starHeight" format="dimension"></attr>
+        <attr name="rating" format="float"></attr>
+        <attr name="starDrawable" format="reference"></attr>
+        <attr name="space" format="dimension"></attr>
+        <attr name="isIndicator" format="boolean"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <string-array name="animals">
+        <item>Abyssinian</item>
+        <item>Aye Aye</item>
+        <item>Baboon</item>
+        <item>Bactrian Camel</item>
+        <item>Burmese</item>
+        <item>Burrowing Frog</item>
+        <item>Butterfly</item>
+        <item>Butterfly Fish</item>
+        <item>Caiman</item>
+        <item>Caiman Lizard</item>
+        <item>Cairn Terrier</item>
+    </string-array>
+
+    <declare-styleable name="XlHRatingBar">
+        <attr name="starCount" format="integer" /><!--总的星星数-->
+        <attr name="canEdit" format="boolean" /><!--是否可以点击选择，有时候纯展示用不需要选择-->
+        <attr name="widthAndHeight" format="dimension" /><!--单个星星的宽度-->
+        <attr name="dividerWidth" format="dimension" /><!--星星左右间距-->
+        <attr name="countSelected" format="integer" /><!--当前已选中的星星个数-->
+        <attr name="stateResId" format="reference" /><!--单个星星不同状态下对应的图标-->
+        <attr name="differentSize" format="boolean" /><!--是否支持大小不等星星样式-->
+    </declare-styleable>
+
+</resources>

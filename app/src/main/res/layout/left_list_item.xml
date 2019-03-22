@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/category_loose"
+    android:background="@color/color_eeeeee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/category_type_pic"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/discount" />
+
+        <TextView
+            android:id="@+id/category_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/category_type_pic"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            tools:text="素食"
+            android:textColor="@color/text_color3"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f6f6f6"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/goods_pic"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:minLines="1"
+                android:textColor="@color/textcolor3"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/goods_type"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/textcolor6"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/goods_num"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/textcolor6"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/refund"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/zhanghu" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:gravity="center_vertical"
+                android:text="仅退款"
+                android:textColor="@color/textcolor3"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="未收到货(包含未签收)，或卖家协议同意前提下"
+            android:textColor="@color/textcolor6"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/return_goods"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/zhanghu" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:gravity="center_vertical"
+                android:text="退货退款"
+                android:textColor="@color/textcolor3"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="已收到货，需要退换已收到的货物"
+            android:textColor="@color/textcolor6"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

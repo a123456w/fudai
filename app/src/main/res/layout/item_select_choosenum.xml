@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_marginBottom="13dp">
+    <RelativeLayout
+        android:id="@+id/rl_item_view"
+        android:layout_width="67dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="娱乐"
+            android:textColor="@color/selector_shop_category_text_color"
+            android:gravity="center"
+            android:background="@drawable/selector_shop_category_bg"/>
+
+        <ImageView
+            android:id="@+id/iv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_red_triangle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

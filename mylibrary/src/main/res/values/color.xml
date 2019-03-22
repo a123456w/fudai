@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="google_blue">#4285F4</color>
+    <color name="google_red">#EA4335</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>
+
+    <color name="base_text_color_light">#909090</color>
+    <color name="base_loading_background">#f7f7f7</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="titleBarColor">#8fc42e</color>
+    <color name="lighttitleBarColor">#E57373</color>
+    <color name="blue">#2196F3</color>
+    <color name="lightblue">#42A5F5</color>
+    <color name="tipTextColor">#9d9d9e</color>
+    <color name="loadingBackgroundColor">#f2f2f2</color>
+    <color name="lineColor">#EFEFEF</color>
+    <color name="yellow">#F5B635</color>
+    <color name="light_yellow">#FFF176</color>
+
+    <color name="roundColor">#ffffff</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="gray_text">#919191</color>
+    <color name="gray_btn">#EBEBEB</color>
+
+    <color name="gray_bg">#f0eff5</color>
+    <color name="gray_line">#ebebeb</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_text">#212121</color>
+     <color name="hinttext">#898989</color>
+
+    <color name="line_textd7d7d7">#d7d7d7</color>
+    <color name="nwb_personal_setup_aboutapp_bg">#FFFFFF</color>
+    <color name="nwb_personal_setup_textcolor3">#333333</color>
+    <color name="nwb_personal_setup_textcolor6">#666666</color>
+    <color name="nwb_personal_setup_textcolor9">#999999</color>
+</resources>

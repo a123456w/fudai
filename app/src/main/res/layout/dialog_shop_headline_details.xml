@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="桔子酒店精选大床房"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/font_normal" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_delete_red" />
+    </RelativeLayout>
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@color/white" />
+
+    <ListView
+
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+
+        ></ListView>
+
+</LinearLayout>

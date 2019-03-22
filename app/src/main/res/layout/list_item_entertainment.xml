@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="106dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_pic"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="金华四季KTV（昌平店）"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/textSize15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/iv_pic"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@color/red" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="3dp"
+                    android:src="@color/red" />
+
+                <ImageView
+                    android:layout_width="13dp"
+
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="3dp"
+                    android:src="@color/red" />
+
+                <ImageView
+                    android:layout_width="13dp"
+
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="3dp"
+                    android:src="@color/red" />
+
+                <ImageView
+                    android:layout_width="13dp"
+
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="3dp"
+                    android:src="@color/red" />
+
+                <TextView
+                    android:id="@+id/tv_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+
+                    android:text="4分"
+                    android:textColor="#dd0f1b"
+                    android:textSize="@dimen/textSize12" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_initiate_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="78元起"
+                    android:textColor="@color/text_color6"
+                    android:textSize="@dimen/textSize13" />
+
+
+                <TextView
+                    android:text="昌平镇2km"
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/text_color6"
+                    android:textSize="@dimen/textSize13" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:background="#eeeeee"></View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="9dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="￥78"
+            android:textColor="#e75252"
+            android:textSize="@dimen/textSize15" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="15dp"
+
+            android:text="任选6小时，嗨唱全场"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/textSize13" />
+
+        <TextView
+            android:id="@+id/tv_number_of_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+
+            android:text="已订455"
+            android:textColor="@color/text_color6"
+            android:textSize="@dimen/textSize13" />
+    </RelativeLayout>
+    
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="#f6f6f6"></View>
+</LinearLayout>

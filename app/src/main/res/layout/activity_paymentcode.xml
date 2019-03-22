@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="35dp"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp"
+    android:paddingTop="35dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/layouthight"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:text="输入支付密码"/>
+    <com.ruirong.chefang.widget.PasswordInputView
+        android:id="@+id/pass_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:cursorVisible="false"
+        android:inputType="number"
+        android:maxLength="6"
+        app:pivBorderColor="#cccccc"
+        app:pivBorderRadius="10dp"
+        app:pivBorderWidth="10dp"
+        app:pivPasswordColor="#cccccc"
+        app:pivPasswordLength="6"
+        app:pivPasswordWidth="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/layouthight"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:text="确认支付密码"/>
+    <com.ruirong.chefang.widget.PasswordInputView
+        android:id="@+id/pass_surepwd"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:cursorVisible="false"
+        android:inputType="number"
+        android:maxLength="6"
+        app:pivBorderColor="#cccccc"
+        app:pivBorderRadius="10dp"
+        app:pivBorderWidth="10dp"
+        app:pivPasswordColor="#cccccc"
+        app:pivPasswordLength="6"
+        app:pivPasswordWidth="10dp" />
+    <TextView
+        android:id="@+id/tv_wrongpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:text="支付密码不一致"/>
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layouthight"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/selector_btn"
+        android:text="确定"
+        android:textColor="@color/white" />
+
+</LinearLayout>

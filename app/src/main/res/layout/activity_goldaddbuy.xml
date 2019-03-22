@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/cash"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/moneyimg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_cash"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/money"
+            android:background="@null"
+            android:hint="请输入金额"
+            android:inputType="number"
+            android:maxLength="8" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="当前金豆余额：" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/red" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rv_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/rl_grow1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="62dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_growgoldw"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_chong1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:id="@+id/mychong1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="充"/>
+                <TextView
+                    android:id="@+id/tv_moneyo1"
+                    android:layout_toRightOf="@+id/mychong1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:text="1000"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/shouyi1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预计收益"
+                android:textSize="10sp"
+                android:layout_below="@+id/rl_chong1"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_profit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="146.00"
+                android:textColor="@color/red"
+                android:layout_below="@+id/shouyi1"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_grow2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="62dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_growgoldw"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_chong2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:id="@+id/mychong2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="充"/>
+                <TextView
+                    android:id="@+id/tv_moneyo2"
+                    android:layout_toRightOf="@+id/mychong2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:text="1000"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/shouyi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预计收益"
+                android:textSize="10sp"
+                android:layout_below="@+id/rl_chong2"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_profit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="146.00"
+                android:textColor="@color/red"
+                android:layout_below="@+id/shouyi2"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_grow3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="62dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_growgoldw"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_chong3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:id="@+id/mychong3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="充"/>
+                <TextView
+                    android:id="@+id/tv_moneyo3"
+                    android:layout_toRightOf="@+id/mychong3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:text="1000"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/shouyi3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预计收益"
+                android:textSize="10sp"
+                android:layout_below="@+id/rl_chong3"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_profit3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="146.00"
+                android:textColor="@color/red"
+                android:layout_below="@+id/shouyi3"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrows"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击种植即同意金豆种植咨询与服务协议" />
+
+        <LinearLayout
+            android:id="@+id/ll_aggrement"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/agreement"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/rb_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/tv_aggrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="《金豆增值咨询与服务协议》" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_below="@+id/ll_aggrement"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_corner_red"
+            android:gravity="center"
+            android:text="种植"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

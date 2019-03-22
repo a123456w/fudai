@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:text="标题"
+            />
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_close"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.youth.banner.Banner
+        android:id="@+id/banner_top"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <include layout="@layout/list_item_division_line"></include>
+
+
+    <ListView
+        android:id="@+id/lv_parameter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white" />
+</LinearLayout>

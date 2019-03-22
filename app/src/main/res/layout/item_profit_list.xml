@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="185dp"
+    android:padding="6dp">
+    <LinearLayout
+        android:background="@drawable/shape_stroke_grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dateline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        tools:text="30天种植期"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始时间："
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/tv_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="dka"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+            <TextView
+                android:id="@+id/cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="种植数量："
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/tv_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"                tools:text="23"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束时间："
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_endtime"
+                android:layout_toRightOf="@+id/endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="dka"
+                android:layout_gravity="center_vertical"/>
+
+
+
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/profit"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="增长数量："
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/tv_profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                tools:text="23"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_checkhis"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:text="查看收获记录"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:background="@drawable/round_corner_red"
+        android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+

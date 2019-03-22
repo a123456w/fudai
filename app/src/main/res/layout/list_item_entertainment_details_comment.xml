@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        style="@style/color6_size14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="25dp"
+        tools:text="金华四季KTV（昌平店）" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <RatingBar
+            android:id="@+id/rb_grade"
+            style="@android:style/Widget.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressDrawable="@drawable/ratingbar_drawable"
+            android:stepSize="0.1" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/color6_size14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            tools:text="2017-12-11" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_number_of_orders"
+        style="@style/color3_size14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        tools:text="真的不错高端大气上档次，很干净，音响质量很好，服务员态度也挺好的" />
+
+
+    <com.qlzx.mylibrary.widget.NoScrollGridView
+        android:id="@+id/ngr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="10dp">
+
+    </com.qlzx.mylibrary.widget.NoScrollGridView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#eeeeee"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_replay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商家回复:" />
+
+        <TextView
+            android:id="@+id/tv_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:text="您的满意是我们前进的动力，您的支持是我们服务的目标" />
+
+    </LinearLayout>
+
+</LinearLayout>

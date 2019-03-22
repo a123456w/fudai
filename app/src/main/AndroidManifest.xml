@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ruirong.chefang">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Required -->
+    <permission
+        android:name="com.ruirong.chefang.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.ruirong.chefang.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+
+
+    <!-- 分享权限  剩下的上边都有 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission." />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 导航 -->
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 摄影机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- android:allowBackup="true" -->
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/DefaultCityPickerTheme"
+        tools:replace="android:allowBackup">
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="24898327" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="f9033f6c1e1010fb72317a2c30c93f31" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCoT6CYE2b5U5Opr1LA7BkPoJAppZyP6Ln+O+7o3YuyE9L13LUBzXnRVntgatH5J302R1zGXEi9cUxeokzMGl5TwWLCqXCmjmqQZMKI7ivQ561d5zyRhAz1u4tE2kaVadZxXqhpMA/O7uD7PPZyPD6X87W4+UDErfUX2BaONGrVK0i3agsSICAZ393elWfEDEVDHiOtFwA3V2dcg5mP0aqd1votoISp9Wd0On7vvGDaS5vDTW67/v3X86MjTCjcRpJSMMzUTyS/qTlhP2zVVIbE+p8n4ZXoT1FuVP9KksDOr7n7HnEgRaFdZJr/6QO235EVbnYdhlHKUyXRXD/a2rMjAgMBAAECggEAJxUmY2nN9YNUvIg7nRS11Q0hrKoKKtiNp91e4q/fKmC0EedIGL0P1m5Qg9kKHOLwjlQP1PfE5EiUxTzGvHY7BRPYzP7va52SXSkoiwdTIVVKyo1RYTDamY0ND9XnofZLl1O1o4dHhHOvxmcnius2Va5/ug4W3hTO3tSMmETPsePTBG4Zs1i70lMYqZmwTAZVj/EO0YnRaeQoIZ9wCfnhtcH5HoyJmnjDkXLEH1f+vVjEJoRV6c7jZxYK53tiy8K/rzDYcWI6skFTZJ12cp6EW7ZPpH+SRiFVKnf9prix9lNCw7dm7TADzk2oc+jFpxPc6g0JGtQQY1J+PPIwYED3cQKBgQD6u+e7dBcNOR0Hsc++pFiQBVojsRl8HRLwbcykkBJAY9DtS9LBlPdfTV49aNJifA0W90nT5q/zwCS6WqudulB4Iz0rfomVLhe9IAd5FDmxzd7Z9iVnQtV1divm0DJDKGUtefOoxdhWb23SdLvTAGcUZ8ASDpAnG+9BhsqXfgAwtwKBgQCr2JE/NUsQeK8A5DqcNY9po0Kf4tBIL9c4jz08xbZnTj/Njfe/ZdVjhr2/bCGSncXpga98laPewm2cJlr+83BXc2i4Aessgu7A4+iImHrWI5M3+anECEvP3FnPhmpwJBm/BZ9IQlr5M7fBN2pDHmgAXSvMMKdRSBi0OREUjjiM9QKBgHt5ocrshpWadLNfW2EU6hAysos1Icm/P55rVAYOdQ6EmVTirC1swM2L+kbfoguh74hJy2+xASFWlD+5ex43rH0dTXhn3jU697HJXiTAUxE+wuovj4fkn94yjbgi+z2bXQgiMF4C4GDgiwLDPePRJPIlja7WwSKhXRe123rzMADNAoGAZ3dehIMu7fzryYqg61qoPX9p5uBmbYA4gjpkMYoNOAf6DGZ1C41hvKns5ytQz3klJ2HI6ici4kWIP2MsmKK0OkMngtrM4SD4ZbUTVeMQ2ovS4Pn2SCyCkOVoQbX5sglaYxQcgiJJqg+EjNYzqbPOBKIUc727kAnrrd9KNGkpDV0CgYEA9LR8GhxH0RBJrFdBb8TD6RPw6thX92vtAE4+xNMyOwmaOYcIVvQhQpqr5vuYM1mO4euOpliHaQE+XuHFrUC5ORafA2+cee78U+UCnpl4HmMOx4fxn8dbvsmMJsTkovwkE4X3M5wI4lhIcfuzViPoL5bRMg9Ev+yhWVjosknjohg=" />
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 商城分类通用一级页面 -->
+        <activity android:name=".activity.ShopMallClassifyActivity" />
+
+        <!-- 引导页 -->
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait" />
+        <!-- 主页 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask" />
+
+        <!-- 消息 -->
+        <activity android:name=".activity.MessageActivity" />
+
+        <!-- 登录 -->
+        <activity android:name=".activity.LoginActivity" />
+        <!-- 注册 -->
+        <activity android:name=".activity.RegisterActivity" />
+        <!-- 修改密码 -->
+        <activity android:name=".activity.ModifyPasswordActivity" />
+        <!-- 修改密码第二步 -->
+        <activity android:name=".activity.ModifyPasswordActivity2" />
+
+        <!-- 修改支付密码 -->
+        <activity android:name=".activity.UpdatePayPwdActivity" />
+
+        <!-- 消息详情页 -->
+        <activity android:name=".activity.MessageDetailActivity" />
+
+        <!-- web页 -->
+        <activity
+            android:name=".activity.WebActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 设置 -->
+        <activity android:name=".activity.SetActivity" />
+        <!-- 关于我们 -->
+        <activity android:name=".activity.AboutOusActivity" />
+        <!-- 申请合伙人 -->
+        <activity android:name=".activity.ApplayPartenerActivity" />
+        <!-- 店铺评论 -->
+        <activity android:name=".activity.BusinessReviewsActivity" />
+        <!-- 我的钱包 -->
+        <activity
+            android:name=".activity.MyPurseActivity"
+            android:launchMode="singleTask" />
+        <!-- 金豆增值列表 -->
+        <activity android:name=".activity.GoldAddListActivity" />
+        <!-- 购买三十天定期 -->
+        <activity android:name=".activity.GoldThirtyBuyActivity" />
+        <!-- 支付密码设置 -->
+        <activity android:name=".activity.PayMentCodeActivity" />
+        <!-- 金豆增值 -->
+        <activity android:name=".activity.GoldAddActivity" />
+        <!-- 金豆提现 -->
+        <activity android:name=".activity.GoldWithDrawActivity" />
+        <!-- 酒店住宿 -->
+        <activity android:name=".activity.HotelStayActivity" />
+        <!-- 剪辑图片 -->
+        <activity android:name=".view.ClipImageActivity" />
+        <!-- 酒店住宿 -->
+        <activity
+            android:name=".activity.HotelActivity"
+            android:launchMode="standard" />
+        <!-- 酒店住宿详情 -->
+        <activity
+            android:name=".activity.HotelDetailActivity"
+            android:launchMode="standard" />
+        <!-- 排行榜 -->
+        <activity android:name=".activity.RankingListActivity" />
+        <!-- 我要买单 -->
+        <activity android:name=".activity.GoToBuyABillActivity" />
+        <!-- 排行 -->
+        <activity android:name=".activity.RankingActivity" />
+        <!-- 车房 -->
+        <activity android:name=".activity.GarageActivity" />
+        <!-- 车房发布 -->
+        <activity android:name=".activity.GarageReleaseActivity" />
+        <!-- 预约看房 -->
+        <activity android:name=".activity.ReservationsActivity" />
+        <!-- 充值界面 -->
+        <activity android:name=".activity.RechargeActivity" />
+        <!-- 我的地址 -->
+        <activity
+            android:name=".activity.AddressActivity"
+            android:launchMode="singleTask" />
+        <!-- 预定 -->
+        <activity
+            android:name=".activity.ReserceActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <!-- 选择如离店日期 -->
+        <activity android:name=".activity.ReserveHotelActivity" />
+        <!-- 评价 -->
+        <activity android:name=".activity.EvaluateActivity" />
+        <!-- 福袋专区 确认订单接口 -->
+        <activity
+            android:name=".activity.EachChildConfirmationOfOrderActivity"
+            android:launchMode="singleTask" />
+        <!-- 确认订单 -->
+        <activity android:name=".activity.ConfirmationOrderActivity" />
+        <!-- 确认订单 到店自取 -->
+        <activity android:name=".activity.ConfirmationOorder_PickUpActivity" />
+        <!-- 设置支付密码 -->
+        <activity android:name=".activity.SettingPaymentPasswordActivity" />
+        <!-- 退款选择 -->
+        <activity android:name=".activity.RefundChoiceActivity" />
+        <!-- 退款详情 -->
+        <activity android:name=".activity.ApplicationForRefundActivity" />
+        <!-- 车房详情 -->
+        <activity android:name=".activity.GarageDetailsActivity" />
+        <activity android:name=".activity.CityActivity" />
+        <activity android:name=".activity.ProvinceActivity" />
+        <activity android:name=".activity.CountyActivity" />
+        <!-- 个人中心 -->
+        <activity android:name=".activity.PersionMessageActivity" />
+        <!-- 修改昵称 -->
+        <activity android:name=".activity.UpdateNikeNameActivity" />
+        <!-- 金豆转账 -->
+        <activity android:name=".activity.SilverTransferActivity" />
+        <!-- 金豆转账第二步 -->
+        <activity android:name=".activity.SilverTransferActivitytwo" />
+        <!-- 充值详情 -->
+        <activity android:name=".personalcenter.RechargeDetailActivity" />
+        <!-- 金豆转账记录 -->
+        <activity android:name=".activity.SilverTransferRecordActivity" />
+        <!-- 金豆转账详情 -->
+        <activity android:name=".activity.SilverTransferDetialActivity" />
+        <!-- 添加银行卡 -->
+        <activity android:name=".activity.AddBankCardActivity" />
+
+        <!-- 新增收货地址 -->
+        <activity android:name=".activity.AddreceiveAddressActivity" />
+        <!-- 选择收货地址 -->
+        <activity android:name=".activity.SelectAddressActivity" />
+        <!-- 修改收货地址 -->
+        <activity android:name=".activity.UpdateReceiveAddressActivity" />
+
+        <!-- 银行卡 -->
+        <activity android:name=".activity.BankCardActivity" />
+        <!-- 扫码 -->
+        <activity android:name=".activity.ScanActivity" />
+        <!-- 银行卡详情 -->
+        <activity android:name=".activity.BankCardDetailActivity" />
+        <!-- 身份认证状态 -->
+        <activity android:name=".activity.IdentityStatusActivity" />
+        <!-- 储值页面 -->
+        <activity android:name=".activity.StoredValueActivity" />
+        <!-- 立即预定 -->
+        <activity android:name=".activity.ImmediateReservationActivity" />
+        <!-- 娱乐 -->
+        <activity android:name=".activity.EntertainmentActivity" />
+        <!-- 娱乐详情 -->
+        <activity android:name=".activity.EntertainmentDetailsActivity" />
+        <!-- 购物车 -->
+        <activity android:name=".shoppingcart.ShoppingCartActivity" />
+        <!-- 消费记录 -->
+        <!-- 消费记录详情 -->
+        <activity android:name=".personalcenter.PurchaseHistoryDetailsActivity" />
+        <!-- 导航 -->
+        <activity android:name=".activity.BNDemoGuideActivity" />
+        <!-- 路径规划 -->
+        <activity android:name=".activity.NaviActivity" />
+        <!-- 美食详情 -->
+        <activity android:name=".activity.CookingDetailActivity" />
+        <!-- 点餐类型选择 -->
+        <activity android:name=".activity.ChooseOrderActivity" />
+        <!-- 店外预约点餐 -->
+        <activity android:name=".activity.OutsideOrderActivity" />
+        <!-- 扫码点餐 -->
+        <activity android:name=".activity.CookingSwipActivity" />
+
+        <!-- 7.0app之间共享文件解决方案 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ruirong.chefang.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- 元数据 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/update_cache_path" />
+        </provider>
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+        <!-- 微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.ruirong.chefang" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="com.ruirong.chefang" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".jpush.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.ruirong.chefang" />
+            </intent-filter>
+        </receiver>
+
+        <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调 -->
+        <receiver android:name=".jpush.MyJPushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+
+                <category android:name="com.ruirong.chefang" />
+            </intent-filter>
+        </receiver>
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="c34fa2671e71147ec16db3d4" /> <!-- </>值来自开发者平台取得的AppKey -->
+
+
+        <!-- 百度地图 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="U4NdBx7iPnDYNyAU8oKFYUQSA8xwRz8K" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59421d2207fe65071f000693" />
+        <!-- <meta-data android:value="Channel ID" android:name="UMENG_CHANNEL"/> -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+        <!-- 特产订单 -->
+        <activity android:name=".personalcenter.SpecialtyOrderActivity" />
+        <!-- 预定订单 -->
+        <activity android:name=".personalcenter.ReserveOrderActivity" />
+        <!-- 物流详情 -->
+        <activity android:name=".personalcenter.LogisticsDetailsActivity" />
+        <!-- 订单详情 -->
+        <activity android:name=".personalcenter.OrderDetailsActivity" />
+        <!-- 预约订单  订单详情 -->
+        <activity android:name=".personalcenter.ReserveOrderDetailsActivity" />
+        <!-- 福返酒店 -->
+        <activity android:name=".activity.LuckbackHotelActivity" />
+        <!-- 立即绑定 -->
+        <activity android:name=".activity.LmmediatelyBindingActivity" />
+        <!-- 特产专区 -->
+        <activity android:name=".activity.SpecialPrefectureActivity" />
+        <!-- 特产列表 -->
+        <activity android:name=".activity.SpecialtyListActivity" />
+        <!-- 福返房产 -->
+        <activity android:name=".activity.LuckBackRoomActivity" />
+        <!-- 售后详情 -->
+        <activity android:name=".activity.AfterSaleDetailsActivity" />
+        <!-- 搜索页面 SpecialtyOrderDetailsActivity -->
+        <activity android:name=".activity.SearchActivity" />
+        <!-- 搜索页面 SpecialtyOrderDetailsActivity -->
+        <activity android:name=".activity.SearchActivitys" />
+        <!-- 特产专区订单评论 -->
+        <activity android:name=".activity.SpecialProductReview" />
+        <!-- 特产专区快递详情 -->
+        <activity android:name=".activity.ExpressDeliveryDetailsActivity" />
+        <!-- 特产专区详情页面 -->
+        <activity android:name=".activity.SpecialtyOrderDetailsActivity" />
+        <!-- 福袋专区 -->
+        <activity android:name=".activity.LuckyBagPrefectureActivity" />
+        <!-- 店铺缺订单页面 -->
+        <activity
+            android:name=".activity.ShopCartConfirmActivity"
+            android:launchMode="singleTask" />
+        <!-- 福袋专区 跳转到的  确认订单 -->
+        <activity
+            android:name=".activity.LuckybagPrefectureConfirmOrderActivity"
+            android:launchMode="singleTask" />
+        <!-- 特产详情 -->
+        <activity android:name=".activity.SpecialtyDetailsActivity" />
+        <!-- 支付页面 -->
+        <activity android:name=".activity.ImmediatelyPaymentActivity" />
+        <!-- 购物车页面 -->
+        <activity android:name=".shoppingcart.cart.ShoppingCartActivity" />
+        <!-- 全部商品 -->
+        <activity
+            android:name=".activity.AllProductActivity"
+            android:launchMode="singleTask" />
+        <!-- 商家头条 -->
+        <activity android:name=".activity.ShopHeadlineActivity" />
+        <!-- 热销产品详情  所有美食详情 -->
+        <activity android:name=".activity.HotSellProductDetailsActivity" />
+        <!-- 附近店铺详情页面（详情1）所有店铺详情 -->
+        <activity android:name=".activity.NearbyShopDetailsActivity" />
+        <!-- 建材家居详情(详情2) -->
+        <activity android:name=".activity.BuildingHomeDetailsActivity" />
+        <activity android:name=".activity.AllBusinessActivity" />
+        <!-- 生活服务页面 -->
+        <activity android:name=".activity.LifeServiceActivity" />
+        <!-- 数码产品 -->
+        <activity android:name=".activity.NumericalCodeActivity" />
+        <!-- 福袋专区评论 -->
+        <activity android:name=".activity.EachChildCommentActivity" />
+        <!-- 娱乐 确认订单 -->
+        <activity android:name=".activity.EntertainmentAffirmOrderActivity" />
+        <!-- 普通套餐 确认订单 -->
+        <activity android:name=".activity.CommodityConfirmationOrderActivity" />
+        <!-- 商家入驻 -->
+        <activity android:name=".activity.ShopEnterActivity" />
+        <!-- 入驻 -->
+        <activity android:name=".activity.EnteringActivity" />
+        <!-- 商城地图页面 -->
+        <activity android:name=".activity.MapActivity" />
+        <activity android:name=".activity.ScanAndPaymentActivity" />
+        <activity android:name=".activity.EnterAndLeaveHotelActivity" />
+        <!-- 我的储值 -->
+        <activity android:name=".personalcenter.MyStoredValueActivity" />
+        <activity android:name=".activity.SearchResultActivity" />
+        <!-- 商城订单 -->
+        <activity android:name=".personalcenter.ShopOrderActivity" />
+        <!-- 商城订单详情 -->
+        <activity android:name=".activity.ShopOrderDetailsActivity" />
+        <!-- 分类商品详情 -->
+        <activity android:name=".activity.ClassifiedGoodsActivity" />
+        <!-- 商城订单评价 -->
+        <activity android:name=".personalcenter.ShopOrderCommentActivity" />
+        <!-- 预定订单评价 -->
+        <activity android:name=".activity.ReserveOrderCommentActivity" />
+        <!-- 商城订单退款 -->
+        <activity android:name=".personalcenter.ShopOrderRefundActivity" />
+        <!-- 福袋订单 -->
+        <activity android:name=".personalcenter.LuckyBagOrderActivity" />
+        <!-- 福袋订单详情 -->
+        <activity android:name=".personalcenter.LuckyBagOrderDetailActivity" />
+
+        <!-- 美食订单 -->
+        <activity android:name=".activity.CookingOrderActivity" />
+
+        <!-- 预定订单退款 -->
+        <activity android:name=".personalcenter.ReserveOrderRefundActicity" />
+        <activity android:name=".personalcenter.MyRoomTimeActivity" />
+        <activity android:name=".activity.RuleActivity" />
+        <activity android:name=".personalcenter.LookRoomHistoryActivity" />
+        <activity android:name=".personalcenter.PublishCommentActivity" />
+        <activity android:name=".personalcenter.MyCollectionActivity" />
+        <activity android:name=".personalcenter.MyRecommendActivity" />
+        <activity android:name=".personalcenter.RecommendRecordActivity" />
+        <activity android:name=".activity.AddAddressActivity" />
+        <activity android:name=".activity.GongGaoActivity" />
+        <activity android:name=".personalcenter.ExchangeRecordActivity" />
+        <activity android:name=".personalcenter.MyLuckyBagActivity" />
+        <activity android:name=".personalcenter.JinDouPayCashActivity" />
+        <activity android:name=".personalcenter.ExpenseCalendarActivity1" />
+        <activity android:name=".personalcenter.ExpenseCalendarActivity" />
+        <activity android:name=".personalcenter.GoldBeanBuyActivity" />
+        <activity android:name=".personalcenter.GoldBeanIncreaseListActivity" />
+        <activity android:name=".personalcenter.GoldBeanGrowActivity" />
+        <activity android:name=".personalcenter.MyReferralCodeActivity" />
+        <activity android:name=".personalcenter.UpdatePayPassActivity" />
+        <activity android:name=".personalcenter.GoldbeanBusinessDetailsActivity" />
+        <!-- 新版美食页 -->
+        <activity android:name=".personalcenter.ConsumeRecordChooseTimeActivity" />
+
+        <!-- 分享 -->
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106153309" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--人气推荐页-->
+        <activity android:name=".activity.RecommendActivity" />
+        <!-- 美食 页 -->
+        <activity android:name=".activity.DeliciousFoodActivity" />
+        <activity android:name=".activity.GoodFoodActivity" />
+        <!--<activity android:name=".activity.SpotDetailsActivity" />-->
+        <!--<activity android:name=".activity.SpotActivity" />-->
+        <!-- 美食 套餐详情页 -->
+        <activity android:name=".activity.PackageDetailsActivity" />
+        <!-- 美食 商家详情页 -->
+        <activity android:name=".activity.BusinessDetailsActivity" />
+        <!-- 美食 确认订单页 -->
+        <activity android:name=".activity.ConfirmOrderActivity" />
+        <!-- 美食 单品详情页 -->
+        <activity android:name=".activity.ItemDetailsActivity"></activity>
+    </application>
+
+</manifest>

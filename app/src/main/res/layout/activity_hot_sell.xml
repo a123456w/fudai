@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner_top"
+                android:layout_width="match_parent"
+                android:layout_height="210dp" />
+
+            <com.ruirong.chefang.widget.MarqueTextView
+                android:id="@+id/tv_table_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/detailCommonMargin"
+                android:drawableLeft="@drawable/laba"
+                android:drawablePadding="5dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="总统套房一律五折，先到先得总统套房一律五折，先到先得总统套房一律五折，先到先得"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_large">
+
+                <TextView
+                    android:id="@+id/tv_browsernum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/ic_browse"
+                    android:drawablePadding="5dp"
+                    android:text="1999人浏览" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/line"></include>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_real_estate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/textmarginleft"
+                    android:layout_marginTop="26dp"
+                    android:text="汉阴自强地产："
+                    android:textColor="@color/text_color3"
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:text="金海岸"
+                    android:textColor="@color/text_color3"
+                    android:textSize="@dimen/font_normal" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/rb_grade"
+                        style="@android:style/Widget.RatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="13dp"
+                        android:layout_marginLeft="@dimen/textmarginleft"
+                        android:layout_marginTop="1dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:progressDrawable="@drawable/ratingbar_drawable"
+                        android:stepSize="0.1" />
+
+                    <TextView
+                        android:id="@+id/tv_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+
+                        android:text="5分"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="人均 : ￥79"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/textSize12" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <ImageView
+                    android:id="@+id/tv_position"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:src="@drawable/locationsss" />
+
+                <ImageView
+                    android:id="@+id/iv_phone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/image_phone" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@id/iv_phone"
+                    android:text="北京市昌平区政府西路188号（西关三角地，政府与城西角交叉口）距离您步行952米"
+                    android:textColor="@color/text_color6"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_alignParentBottom="true"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:drawableLeft="@drawable/image_taochan"
+                android:drawablePadding="@dimen/dp10"
+                android:gravity="center"
+                android:text="套餐选项"
+                android:textColor="@color/textcolor3"
+                android:textSize="@dimen/textSize15" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_taochan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:id="@+id/rl_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:drawableLeft="@drawable/image_danping"
+                    android:drawablePadding="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="单品选项"
+                    android:textColor="@color/textcolor3"
+                    android:textSize="@dimen/textSize15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="15dp"
+                    android:drawablePadding="@dimen/dp10"
+                    android:drawableRight="@drawable/fanhui"
+                    android:gravity="center"
+                    android:text="查看更多"
+                    android:textColor="@color/textcolor9"
+                    android:textSize="@dimen/textSize15" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_danping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_all_product"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/tv_businessarea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="32dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="全部"
+                    android:textColor="@color/textcolor9"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/fanhui" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="@dimen/textmarginleft"
+                    android:gravity="center"
+                    android:text="用户评价（1588）"
+                    android:textColor="@color/text_color3"
+                    android:textSize="@dimen/font_normal" />
+
+                <com.qlzx.mylibrary.widget.CircleBar
+                    android:id="@+id/cb_evaluate"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"></com.qlzx.mylibrary.widget.CircleBar>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/gray" />
+
+
+            </LinearLayout>
+
+            <com.qlzx.mylibrary.widget.NoScrollListView
+                android:id="@+id/nslv_shopmall_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.qlzx.mylibrary.widget.NoScrollListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/layout_trade" />
+</FrameLayout>

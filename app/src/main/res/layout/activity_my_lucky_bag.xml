@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f6f6f6"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layouthight"
+                android:background="@color/titleBarColor">
+
+                <ImageView
+                    android:id="@+id/iv_titlebar_left1"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:padding="13dp"
+                    android:src="@drawable/ic_back_white" />
+
+                <TextView
+                    android:id="@+id/tv_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="待返金"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:layout_below="@id/rl_title"
+                android:background="@color/titleBarColor">
+
+                <TextView
+                    android:id="@+id/tv_lucky_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="90dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="60dp"
+                    android:text="待返金额（元）"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="160dp"
+                android:background="@drawable/wode_fudai"
+                android:divider="@color/transparent"
+                android:paddingBottom="40dp">
+
+                <include
+                    android:id="@+id/ll_luckbag_top"
+                    layout="@layout/item_my_luckybag_top_layout" />
+
+                <com.canyinghao.canrefresh.CanRefreshLayout
+
+                    android:id="@+id/refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/ll_luckbag_top">
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:id="@+id/can_content_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overScrollMode="never">
+
+                        <com.qlzx.mylibrary.widget.NoScrollListView
+                            android:id="@+id/nslv_exposure"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:overScrollMode="never" />
+                    </android.support.v4.widget.NestedScrollView>
+
+
+                    <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                        android:id="@id/can_refresh_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never" />
+
+                    <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                        android:id="@id/can_refresh_footer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.canyinghao.canrefresh.CanRefreshLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="20dp"
+                android:drawableTop="@drawable/image_empty"
+                android:gravity="center_horizontal"
+                android:text="没有相关内容" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
+

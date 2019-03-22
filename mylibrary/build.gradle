@@ -1,0 +1,75 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.neenbedankt.android-apt'
+
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+
+    //retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.squareup.okio:okio:1.5.0'
+    //glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    //rxjava
+    compile 'io.reactivex:rxjava:1.2.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    //eventbus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //umeng
+    //compile 'com.umeng.analytics:analytics:latest.integration'
+    //multidex
+    compile 'com.android.support:multidex:1.0.1'
+    //leakcanary
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    //6.0动态权限
+    compile 'com.yanzhenjie:permission:1.0.7'
+    //下来刷新控件
+    compile 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
+    compile 'com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE'
+    //九宫格图片选择器
+    compile 'cn.bingoogolapple:bga-photopicker:1.2.3@aar'
+    compile 'cn.bingoogolapple:bga-adapter:1.1.5@aar'
+    //圆形图片
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+
+
+    //    这个是首页沉浸式效果
+    implementation project(':libraryEyes')
+
+}

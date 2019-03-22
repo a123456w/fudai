@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/can_content_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp">
+
+            <ImageView
+                android:id="@+id/business_pic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/fudai" />
+
+            <TextView
+                android:id="@+id/business_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/business_pic"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/text_color3"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:background="@color/color_f6f6f6" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/business_content"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:hint="说说你的心得，分享给想买的他们吧"
+            android:paddingLeft="15dp"
+            android:textColor="@color/text_color3"
+            android:textSize="12sp" />
+
+        <com.qlzx.mylibrary.widget.NoScrollGridView
+            android:id="@+id/pic_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3">
+
+        </com.qlzx.mylibrary.widget.NoScrollGridView>
+
+
+        <LinearLayout
+            android:id="@+id/evaluate_goods_type_ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="15dp">
+
+            <LinearLayout
+                android:id="@+id/evaluate_goods_type_pic_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/evaluate_goods_type_pic"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:button="@null"
+                    android:background="@drawable/selector_chose_niming" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="匿名"
+                    android:textColor="@color/textcolor3"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/evaluate_goods_type_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="你的评论会以匿名的形式展现"
+                android:textColor="@color/textcolor6"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/color_f6f6f6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/shopping_order" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="店铺评分"
+                    android:textColor="@color/textcolor3"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="描述相符："
+                    android:textColor="@color/textcolor6"
+                    android:textSize="15dp" />
+
+
+                <com.ruirong.chefang.view.XLHRatingBar xmlns:lxhRatingBar="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ratingbar_match"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    lxhRatingBar:canEdit="true"
+                    lxhRatingBar:countSelected="0"
+                    lxhRatingBar:dividerWidth="5dp"
+                    lxhRatingBar:starCount="5"
+                    lxhRatingBar:stateResId="@drawable/comment_ratingbar_selector"
+                    lxhRatingBar:widthAndHeight="20dp">
+
+                </com.ruirong.chefang.view.XLHRatingBar>
+
+                <TextView
+                    android:id="@+id/ratingbar_match_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/textcolor6"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="服务态度："
+                    android:textColor="@color/textcolor6"
+                    android:textSize="15dp" />
+
+
+                <com.ruirong.chefang.view.XLHRatingBar xmlns:lxhRatingBar="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ratingbar_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    lxhRatingBar:canEdit="true"
+                    lxhRatingBar:countSelected="0"
+                    lxhRatingBar:dividerWidth="5dp"
+                    lxhRatingBar:starCount="5"
+                    lxhRatingBar:stateResId="@drawable/comment_ratingbar_selector"
+                    lxhRatingBar:widthAndHeight="20dp">
+
+                </com.ruirong.chefang.view.XLHRatingBar>
+
+                <TextView
+                    android:id="@+id/ratingbar_service_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/textcolor6"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/enture_pay_money_bg"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

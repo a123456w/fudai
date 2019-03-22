@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/lls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/shop_pic"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitCenter"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                >
+                    <TextView
+                        android:id="@+id/shop_name"
+                        android:layout_width="match_parent"
+                        android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        tools:text="套餐套餐餐套餐套餐套餐餐套餐套餐"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_reservesss"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="11dp"
+                    android:layout_height="wrap_content"
+                    tools:text="购买"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/tv_reserve"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="right"
+                android:scaleType="fitXY"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_buyonline" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/new_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    tools:text="￥236"
+                    android:textColor="@color/red"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="门市价:"
+                    android:textColor="@color/textcolor6"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/who_price"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    tools:text="369"
+                    android:textColor="@color/textcolor6"
+                    android:textSize="14dp" />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

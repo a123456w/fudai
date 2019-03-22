@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:id="@+id/iv_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_common_check_status"/>
+        <View
+            android:id="@+id/view_point"
+            android:layout_marginRight="5dp"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/red_point"/>
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/text_color"
+            tools:text="消息消息"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_marginBottom="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="2017-04-15"
+        android:gravity="end"
+        android:textSize="12sp"
+        android:textColor="@color/hint_color"/>
+
+    <include layout="@layout/line"/>
+
+</LinearLayout>

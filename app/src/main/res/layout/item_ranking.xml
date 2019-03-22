@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp">
+
+    <RelativeLayout
+        android:id="@+id/ranking_rl"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp">
+
+        <ImageView
+            android:id="@+id/ranking_pic"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_car" />
+
+        <ImageView
+            android:id="@+id/ranking_name_pic"
+            android:layout_width="59dp"
+            android:layout_height="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/first_one" />
+
+        <TextView
+            android:id="@+id/ranking_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="NO.1"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/ranking_rl"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="万年房产"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/textSize15" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/tv_name"
+            android:layout_weight="1"
+            android:lines="2"
+            android:text="汉阴自强地产金海岸商业，立足高远..."
+            android:textColor="@color/text_color9"
+            android:textSize="@dimen/textSize12" />
+    </LinearLayout>
+</RelativeLayout>

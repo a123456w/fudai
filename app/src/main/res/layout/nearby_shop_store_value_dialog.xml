@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f6f6"
+    android:orientation="vertical"
+    tools:context="com.ruirong.chefang.activity.StoredValueActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_nearby_shop_dialog"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:text="储值金额"
+                android:textColor="@color/textcolor3"
+                android:textSize="@dimen/textSize15" />
+
+            <EditText
+                android:id="@+id/tv_peice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dp"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入金额"
+                android:inputType="numberDecimal"
+                android:textColor="@color/red"
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/list_item_division_line"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:text="商家赠送  "
+                android:textColor="@color/textcolor3"
+                android:textSize="@dimen/textSize15" />
+
+            <TextView
+                android:id="@+id/give_prive"
+                style="@style/colore75252_size15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dp"
+                android:text="¥0"
+
+                />
+        </RelativeLayout>
+
+        <include layout="@layout/list_item_division_line"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:text="所剩余额"
+                android:textColor="@color/textcolor3"
+                android:textSize="@dimen/textSize15" />
+
+            <TextView
+                android:id="@+id/surplus_price"
+                style="@style/colore75252_size15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dp"
+                android:text="¥0"
+
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/enture_pay_money_bg"
+            android:gravity="center"
+            android:text="立即储值"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

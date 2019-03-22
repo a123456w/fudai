@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:background="@color/white">
+
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView
+            android:id="@+id/zxing_barcode_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:zxing_use_texture_view="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请扫桌台上边的二维码"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/bluedark"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

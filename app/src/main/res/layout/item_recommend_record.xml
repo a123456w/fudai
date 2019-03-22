@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_recommend_name"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="马丽利"
+        android:textColor="@color/text_color3"
+        android:textSize="@dimen/textSize15" />
+
+    <TextView
+        android:id="@+id/tv_recommend_tel"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:text="158****5689"
+        android:textColor="@color/text_color6"
+        android:textSize="@dimen/textSize15" />
+</RelativeLayout>

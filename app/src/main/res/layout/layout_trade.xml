@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btn_storemoney"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="#e75252"
+            android:text="我要储值"/>
+        <Button
+            android:id="@+id/btn_paybill"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="我要买单"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:onClick="onClick"
+            android:background="#dd0f1b"/>
+    </LinearLayout>
+</RelativeLayout>

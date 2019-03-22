@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/white"
+    android:padding="12dp">
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017-02-29"/>
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30天固定收益"/>
+    <TextView
+        android:id="@+id/tv_moneyhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+7.98"
+        android:textColor="@color/red"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

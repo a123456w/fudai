@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/can_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner_top"
+                android:layout_width="match_parent"
+                android:layout_height="210dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.ruirong.chefang.widget.MarqueTextView
+                    android:id="@+id/tv_table_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="@dimen/detailCommonMargin"
+                    android:drawableLeft="@drawable/laba"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="总统套房一律五折，先到先得总统套房一律五折，先到先得总统套房一律五折，先到先得"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="6dp"
+                    android:text="人预览"
+                    android:textColor="@color/text_color6"
+                    android:textSize="@dimen/font_small" />
+
+                <TextView
+                    android:id="@+id/tv_preview_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_toLeftOf="@id/tv_preview"
+                    android:text="19999"
+                    android:textColor="@color/text_color6"
+                    android:textSize="@dimen/font_small" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="14dp"
+                    android:layout_alignBottom="@id/tv_preview_num"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/tv_preview_num"
+                    android:src="@drawable/image_yanjing" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_real_estate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/textmarginleft"
+                    android:layout_marginTop="26dp"
+                    android:text="汉阴自强地产："
+                    android:textColor="@color/text_color3"
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:text="金海岸"
+                    android:textColor="@color/text_color3"
+                    android:textSize="@dimen/font_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/rb_grade"
+                    style="@android:style/Widget.RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="@dimen/textmarginleft"
+                    android:layout_marginTop="1dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/ratingbar_drawable"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/tv_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+
+                    android:text="5分"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="61dp">
+
+                <ImageView
+                    android:id="@+id/tv_position"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:src="@drawable/locationsss" />
+
+                <ImageView
+                    android:id="@+id/iv_phone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/image_phone" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@id/iv_phone"
+                    android:text="北京市昌平区政府西路188号（西关三角地，政府与城西角交叉口）距离您步行952米"
+                    android:textColor="@color/text_color6"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="48dp"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/detailed_information"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/textmarginleft"
+                    android:gravity="center"
+                    android:text="详细信息"
+                    android:textColor="@color/text_color3"
+                    android:textSize="@dimen/font_normal" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@drawable/fanhui" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="@dimen/textmarginleft"
+                        android:layout_marginTop="13dp"
+                        android:background="#dd0f1b" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="13dp"
+                        android:text="公司简介"
+                        android:textColor="@color/text_color3"
+                        android:textSize="@dimen/font_normal" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_company_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:layout_marginTop="18dp"
+                    android:text="       北京齐力众信科技有限公司，始创于2006年4月。坚持、专注、深耕于互联网平台搭建的外包行业，拥有科技园区独栋办公楼，过百人技术研发团队，服务过众多国家级政府项目，世界五百强企业项目，上万家客户，十年客户满意度100%。"
+                    android:textColor="@color/text_color6"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_marginTop="@dimen/margin"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/textmarginleft"
+                android:gravity="center"
+                android:text="产品"
+                android:textColor="@color/text_color6"
+                android:textSize="@dimen/font_normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
+
+            <com.qlzx.mylibrary.widget.NoScrollListView
+                android:id="@+id/list_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"></com.qlzx.mylibrary.widget.NoScrollListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="@dimen/textmarginleft"
+                    android:gravity="center"
+                    android:text="用户评价（1588）"
+                    android:textColor="@color/text_color3"
+                    android:textSize="@dimen/font_normal" />
+
+                <com.qlzx.mylibrary.widget.CircleBar
+                    android:id="@+id/cb_evaluate"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"></com.qlzx.mylibrary.widget.CircleBar>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/gray" />
+
+
+            </LinearLayout>
+
+            <com.qlzx.mylibrary.widget.NoScrollListView
+                android:id="@+id/list_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"></com.qlzx.mylibrary.widget.NoScrollListView>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_collection"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableTop="@drawable/ic_collect"
+            android:gravity="center"
+            android:text="收藏"
+            android:textColor="@color/text_color6"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_showings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#dd0f1b"
+            android:gravity="center"
+            android:text="预约看房"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

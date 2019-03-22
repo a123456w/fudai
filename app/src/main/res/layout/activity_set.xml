@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+    <RelativeLayout
+        android:id="@+id/ll_catch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layouthight"
+        android:background="@drawable/setting_item_selector"
+        android:paddingLeft="@dimen/textmarginleft"
+        android:paddingRight="@dimen/textmarginleft"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:text="清理缓存"/>
+        <TextView
+            android:id="@+id/tv_clearcache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/right"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:text=""/>
+        <ImageView
+            android:id="@+id/right"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/right_arrows"/>
+    </RelativeLayout>
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/tv_updatepwd"
+        style="@style/layouttextstyle"
+        android:text="修改密码"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/tv_aboutus"
+        style="@style/layouttextstyle"
+        android:text="关于驴优客"/>
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layouthight"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/selector_btn"
+        android:text="退出登录"
+        android:textColor="@color/white" />
+
+</LinearLayout>

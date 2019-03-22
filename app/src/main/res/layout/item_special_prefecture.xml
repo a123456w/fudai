@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="180dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginLeft="@dimen/sw"
+        android:layout_marginRight="@dimen/sw"
+        />
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="鸭舌卤味休闲食品"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize15"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="@dimen/dp10"
+        />
+</RelativeLayout>

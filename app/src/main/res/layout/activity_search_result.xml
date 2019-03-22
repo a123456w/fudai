@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ruirong.chefang.activity.SearchResultActivity">
+
+    <View
+        android:id="@+id/view_top"
+        android:background="#8fc42e"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8fc42e">
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/tv_price"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="13dp"
+            android:src="@drawable/ic_back_white" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@id/tv_search"
+            android:layout_toRightOf="@+id/iv_back"
+            android:background="@drawable/home_search_activity_edittext_bg"
+            android:hint="请输入搜索关键词"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="33dp"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/textSize12" />
+
+
+        <ImageView
+            android:id="@+id/iv_left_arrows"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignLeft="@id/et_search"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:src="@drawable/ic_search"
+
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.canyinghao.canrefresh.CanRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/can_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                android:id="@id/can_refresh_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                android:id="@id/can_refresh_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </com.canyinghao.canrefresh.CanRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="20dp"
+                android:drawableTop="@drawable/image_empty"
+                android:gravity="center_horizontal"
+                android:text="没有相关内容" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

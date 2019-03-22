@@ -1,0 +1,26 @@
+      公用部分
+      activity_commen_list  上拉加载和下拉刷新的列表内部是recycleview。
+      layout_trade    我要储值 我要买单
+
+
+      <!--酒店住宿-->
+        <activity android:name=".activity.HotelActivity" />  du  加跳转
+2017-12-26 jbx
+    activity_garage_release--车房发布
+    activity_reservations--预约看房
+    activity_order_details--订单详情
+    dialog_reason_to_cancel_the_order--个人中心——取消订单的理由
+       <!--车房-->
+           <activity android:name=".activity.GarageActivity"/>
+       <!--车房详情-->
+           <activity android:name=".activity.GarageDetailsActivity"/>
+
+               /*预订
+               */
+              intent1 = new Intent(getActivity(), ReserceActivity.class);
+                intent1.putExtra("int_data", 100);
+                startActivity(intent1);
+
+
+                   intent1 = new Intent(getActivity(), AddressActivity.class);
+                                startActivity(intent1);

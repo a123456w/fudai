@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner_top"
+                android:layout_width="match_parent"
+                android:layout_height="185dp" />
+
+            <include layout="@layout/wide_line" />
+
+            <ViewFlipper
+                android:id="@+id/vf_shop_headline"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:autoStart="true"
+                android:background="@color/white"
+                android:flipInterval="2000"
+                android:inAnimation="@anim/anim_marquee_in"
+                android:orientation="horizontal"
+                android:outAnimation="@anim/anim_marquee_out" />
+
+            <include layout="@layout/wide_line" />
+
+            <com.qlzx.mylibrary.widget.NoScrollGridView
+                android:id="@+id/nsgv_home_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="7dp"
+                android:numColumns="3"
+                android:scrollbars="none">
+
+            </com.qlzx.mylibrary.widget.NoScrollGridView>
+
+            <RelativeLayout
+                android:id="@+id/rl_home1"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="#f6f6f6"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_home_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_bagzone_s" />
+
+            </RelativeLayout>
+
+            <com.qlzx.mylibrary.widget.NoScrollGridView
+                android:id="@+id/nsgv_home_bagzone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/textmarginleft"
+                android:layout_marginTop="7dp"
+                android:numColumns="2">
+
+            </com.qlzx.mylibrary.widget.NoScrollGridView>
+
+            <RelativeLayout
+                android:id="@+id/rl_home2"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="#f6f6f6"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_home_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_hotsale" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/commonMargin"
+                    android:src="@drawable/ic_rightarrawblue"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.qlzx.mylibrary.widget.NoScrollListView
+                android:id="@+id/nsgv_home_hotsale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:numColumns="2" />
+
+            <RelativeLayout
+                android:id="@+id/rl_home3"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="#f6f6f6"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_home_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_recomendshop" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/commonMargin"
+                    android:src="@drawable/ic_rightarrawblue"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.qlzx.mylibrary.widget.NoScrollGridView
+                android:id="@+id/nsgv_home_recomonendshop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/textmarginleft"
+                android:layout_marginTop="7dp"
+                android:numColumns="2"></com.qlzx.mylibrary.widget.NoScrollGridView>
+
+            <com.qlzx.mylibrary.widget.NoScrollGridView
+                android:id="@+id/nsgv_home_recomonendhouse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/textmarginleft"
+                android:layout_marginTop="7dp"
+                android:numColumns="2"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/scrollviewmargin" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/rl_top_search"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/commonPadding"
+        android:paddingRight="@dimen/commonPadding">
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="@dimen/commonPadding"
+            android:layout_marginRight="@dimen/commonPadding"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_cap_white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/search_icon"
+                android:hint="搜索商家/楼盘" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

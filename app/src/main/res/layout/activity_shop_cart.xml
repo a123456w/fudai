@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.canyinghao.canrefresh.CanRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lls_bottom"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/can_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                android:id="@id/can_refresh_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                android:id="@id/can_refresh_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.canyinghao.canrefresh.CanRefreshLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lls_bottom"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="20dp"
+                android:drawableTop="@drawable/image_empty"
+                android:gravity="center_horizontal"
+                android:text="没有相关内容" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lls_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/tv_check_all"
+                    style="@style/CheckBoxStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:text="全选"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_show_total_price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_real_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="￥0.0"
+                        android:textColor="#e75252"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        style="@style/color3_size15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/tv_real_sum"
+                        android:text="合计："
+
+                        />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_goto_settlement"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/nwb_bg_color_red"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="结算"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_delete"
+                style="@style/colordd0f1b_size16"
+                android:layout_width="81dp"
+                android:layout_height="39dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/enture_every_bean_bg"
+                android:gravity="center"
+                android:text="删 除"
+                android:visibility="gone"
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

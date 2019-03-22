@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/division_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/titleBarColor">
+
+            <TextView
+                android:id="@+id/goldbean_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="0.38"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goldbean_num"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="昨日收获（金豆）"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+
+                />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_top"
+            android:layout_marginTop="70dp">
+
+            <com.canyinghao.canrefresh.CanRefreshLayout
+                android:id="@+id/refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/can_content_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <!-- <ListView
+                     android:id="@+id/nslv_exposure"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+
+
+                     android:divider="@color/transparent" />-->
+
+                <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                    android:id="@id/can_refresh_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                    android:id="@id/can_refresh_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </com.canyinghao.canrefresh.CanRefreshLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="20dp"
+                    android:drawableTop="@drawable/image_empty"
+                    android:gravity="center_horizontal"
+                    android:text="没有相关内容" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <!--    <FrameLayout
+                android:layout_below="@id/rl_top"
+                android:layout_marginTop="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.canyinghao.canrefresh.CanRefreshLayout
+                    android:id="@+id/refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                        android:id="@id/can_refresh_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <com.canyinghao.canrefresh.classic.ClassicRefreshView
+                        android:id="@id/can_refresh_footer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </com.canyinghao.canrefresh.CanRefreshLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="20dp"
+                        android:drawableTop="@drawable/image_empty"
+                        android:gravity="center_horizontal"
+                        android:text="没有相关内容" />
+                </RelativeLayout>
+            </FrameLayout>-->
+
+
+        <!-- <ListView
+             android:id="@+id/nslv_exposure"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+
+             android:divider="@color/transparent" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:layout_marginTop="114dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_goldsum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="0.8"
+                    android:textColor="@color/text_color3"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="总收获"
+                    android:textColor="@color/text_color3"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:background="#cccccc"></View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="200.08"
+                    android:textColor="@color/text_color3"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="种植金豆"
+                    android:textColor="@color/text_color3"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
+

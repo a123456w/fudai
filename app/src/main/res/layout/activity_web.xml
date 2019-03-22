@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/web_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/titleBarColor"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/tv_myback"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="13dp"
+                    android:src="@drawable/ic_back_white"
+                    android:textColor="#00000000" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_text_size"
+                    tools:text="标题" />
+            </RelativeLayout>
+
+        </FrameLayout>
+    <!--</ScrollView>-->
+</LinearLayout>

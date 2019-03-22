@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent">
+
+
+        <View
+            android:id="@+id/isbotton"
+            android:layout_width="1dp"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/nwb_bg_color_gray" />
+
+
+        <View
+            android:id="@+id/isTop"
+            android:layout_width="1dp"
+            android:layout_height="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/nwb_bg_color_gray" />
+
+        <ImageView
+            android:id="@+id/arrive_pic"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/transportation" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="21dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="start"
+            android:textColor="@color/textcolor3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="2018-3-26  10:15:1"
+            android:textColor="@color/textcolor6"
+            android:textSize="11dp" />
+
+        <View
+            android:id="@+id/goods_botton"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/nwb_bg_color_gray" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
